@@ -1,0 +1,157 @@
+/* ============================================================
+   Bemobi — Tokens (color + type)
+   Source: /Toolkit/Bemobi---Brandsheet---Cores, ---Tipografia
+   ============================================================ */
+
+/* Webfonts
+   ------------------------------------------------------------
+   Bemobi uses ABC Ginto Normal (Dinamo) for display and
+   Google Sans for product UI. Neither is licensed on Google
+   Fonts. Substitutions (flagged in README):
+     ABC Ginto   → Space Grotesk  (geometric sans, tight)
+     Google Sans → DM Sans        (friendly geometric)
+   We ship these with the weights used in the Figma file. */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  /* ----- Color: primary (azuis + lilás) ----- */
+  --bmb-azul-escuro:    #03021E;   /* fg / near-black ink */
+  --bmb-azul-medio:     #04017B;
+  --bmb-azul-bemobi:    #400FF2;   /* 💙 brand primary */
+  --bmb-lilas:          #9884FF;
+  --bmb-lilas-claro:    #D9CDFD;
+  --bmb-off-white:      #E9E4ED;   /* canvas background */
+
+  /* ----- Color: neutrals ----- */
+  --bmb-preto:          #000000;
+  --bmb-branco:         #FFFFFF;
+  --bmb-cinza-escuro:   #18233C;
+  --bmb-cinza-medio:    #3D4C6F;
+  --bmb-cinza-claro:    #C6C5C9;
+  --bmb-off-white-2:    #F7F7FE;   /* soft UI fill */
+
+  /* ----- Accent (editorial / alerts) ----- */
+  --bmb-amarelo:        #FFBF00;
+
+  /* ----- Gradients ----- */
+  --bmb-grad-4:  linear-gradient(90deg, #03021E 0%, #04017B 25%, #400FF2 50%, #9884FF 100%);
+  --bmb-grad-2b: linear-gradient(90deg, #400FF2 0%, #9884FF 100%);
+  --bmb-grad-2c: linear-gradient(90deg, #9884FF 0%, #D9CDFD 100%);
+  --bmb-grad-2d: linear-gradient(90deg, #D9CDFD 0%, #E9E4ED 100%);
+
+  /* ----- Semantic foreground / background ----- */
+  --fg-1: var(--bmb-azul-escuro);   /* primary ink */
+  --fg-2: var(--bmb-cinza-medio);   /* secondary ink */
+  --fg-3: var(--bmb-cinza-claro);   /* tertiary / disabled */
+  --fg-on-primary: var(--bmb-off-white);
+
+  --bg-canvas:  var(--bmb-off-white);  /* page/section */
+  --bg-card:    var(--bmb-branco);     /* cards, panels */
+  --bg-subtle:  var(--bmb-off-white-2);/* soft fills */
+  --bg-primary: var(--bmb-azul-bemobi);
+
+  --border-hairline: rgba(198,197,201,0.6);
+  --border-soft:     rgba(233,228,237,1);
+  --border-strong:   rgba(24,35,60,0.12);
+
+  /* ----- Elevation ----- */
+  --shadow-xs: 0 1px 2px rgba(3,2,30,0.04);
+  --shadow-sm: 0 2px 8px rgba(3,2,30,0.06);
+  --shadow-md: 0 8px 24px rgba(3,2,30,0.08);
+  --shadow-lg: 0 24px 64px rgba(3,2,30,0.12);
+  --shadow-glass: 0 24px 60px rgba(64,15,242,0.20);
+
+  /* ----- Radii ----- */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-2xl: 64px;
+  --r-pill: 999px;
+
+  /* ----- Spacing (8-pt base) ----- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 132px;
+
+  /* ----- Typography families ----- */
+  --font-display: "Space Grotesk", "ABC Ginto Normal", ui-sans-serif, system-ui, sans-serif;
+  --font-ui:      "DM Sans", "Google Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", monospace;
+
+  /* ----- Type scale (from brandbook: H1 96 / H2 72 / H3 56 / H4 32 / body 24 / caption 20) ----- */
+  --fs-h1: 96px;
+  --fs-h2: 72px;
+  --fs-h3: 56px;
+  --fs-h4: 32px;
+  --fs-body: 24px;
+  --fs-caption: 20px;
+
+  /* UI type scale (product surfaces — Google Sans) */
+  --fs-ui-1: 12px;
+  --fs-ui-2: 14px;
+  --fs-ui-3: 16px;
+  --fs-ui-4: 18px;
+  --fs-ui-5: 20px;
+  --fs-ui-6: 24px;
+
+  /* Tracking */
+  --ls-tight:  -0.03em;   /* display */
+  --ls-snug:   -0.02em;   /* body + UI */
+  --ls-normal: 0;
+}
+
+/* ============================================================
+   Semantic element defaults
+   ============================================================ */
+html { color: var(--fg-1); background: var(--bg-canvas); }
+body { font-family: var(--font-ui); font-size: var(--fs-ui-3); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--fg-1); font-weight: 500; }
+
+h1 { font-size: var(--fs-h1); line-height: 1.0; letter-spacing: var(--ls-tight); }
+h2 { font-size: var(--fs-h2); line-height: 1.05; letter-spacing: var(--ls-tight); }
+h3 { font-size: var(--fs-h3); line-height: 1.1;  letter-spacing: var(--ls-tight); }
+h4 { font-size: var(--fs-h4); line-height: 1.2;  letter-spacing: var(--ls-tight); }
+
+p  { font-size: var(--fs-body); line-height: 1.45; letter-spacing: var(--ls-snug); color: var(--fg-2); }
+
+small, .caption { font-size: var(--fs-caption); line-height: 1.3; color: var(--fg-2); }
+
+code, pre { font-family: var(--font-mono); font-size: 0.92em; }
+
+hr { border: none; border-top: 1px solid var(--border-hairline); }
+
+/* Bemobi eyebrow pattern: small label + big headline stacked */
+.bmb-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--fg-2);
+  line-height: 1.2;
+}
+.bmb-display {
+  font-family: var(--font-ui);       /* brand heading = Google Sans 500 on slides */
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+}
+
+/* Utility: pill */
+.bmb-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: var(--r-pill);
+  font: 500 var(--fs-ui-2)/1 var(--font-ui);
+  letter-spacing: var(--ls-snug);
+}
