@@ -9,6 +9,43 @@
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="case.css" />
 
+<style id="__print-styles">
+@media print {
+  @page { size: A4 portrait; margin: 14mm 12mm; }
+
+  html, body { background: #ffffff !important; }
+  /* Force the dark editorial theme to render in print */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  /* Hide interactive / fixed chrome that doesn't belong in a PDF */
+  .nav, .progress, .casebar, .footer__top, .lb, .case-cta__row { display: none !important; }
+
+  /* Let the page flow naturally instead of being clipped */
+  body { overflow: visible !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+
+  /* Section rhythm: each numbered section starts fresh, never split mid-block */
+  .cs, .case-hero, .case-cta { break-inside: avoid; }
+  .cs { padding-block: 22px !important; }
+  .cs-block { break-inside: avoid; padding-top: 20px !important; }
+
+  /* Keep visual assets whole on a single page */
+  .orch, .ba, .flow, .dsvalue, .metrics, .team, .archline, .statement,
+  .acard, .metric, .ba__col, .flow__node, .dsvalue__cell, .team__item, .cs-list li {
+    break-inside: avoid;
+  }
+
+  /* Headings shouldn't dangle at the bottom of a page */
+  .cs__title, .cs-block__title, .case-hero__title, .ph-label { break-after: avoid; }
+
+  /* Remove hover-dependent motion */
+  * { transition: none !important; animation: none !important; }
+
+  .case-hero { padding-block: 8px 24px !important; }
+  a { text-decoration: none !important; }
+}
+</style>
+
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
    (function(c,l,a,r,i,t,y){
@@ -85,16 +122,30 @@
       <p>No pré-pago, há momentos críticos em que o usuário fica sem saldo ou sem dados e precisa resolver a navegação rápido. Nesses cenários, ele chegava a <em>captive portals</em> com alternativas como recarga, empréstimo de saldo, empréstimo de dados ou serviços de valor agregado.</p>
     </div>
 
-    <p class="ph-label reveal">Visão sistêmica</p>
-    <div class="placeholders is-1 reveal" data-d="1">
-      <!-- Asset 01 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
-      <figure class="ph ph--img">
-        <button class="ph__frame" type="button" data-lightbox="assets/case-loop/01-visao-sistemica.svg" data-cap="Visão sistêmica do Loop · diagrama conceitual e anonimizado" aria-label="Ampliar: Visão sistêmica do Loop">
-          <img src="assets/case-loop/01-visao-sistemica.svg" alt="Diagrama conceitual do Loop como camada de orquestração entre operadoras, canais, regras de negócio, dados comportamentais e IA/ML" loading="lazy" />
-          <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
-        </button>
-        <figcaption class="ph__cap"><b>Visão sistêmica do Loop</b>Diagrama conceitual e anonimizado mostrando o Loop como camada de orquestração entre operadoras, canais digitais, regras de negócio, dados comportamentais e IA/ML.<small>Imagem a ser criada: Loop no centro, entradas à esquerda, saídas à direita e canais na base. Não usar interface real.</small></figcaption>
-      </figure>
+    <p class="ph-label reveal">Diagrama conceitual</p>
+    <div class="orch reveal" data-d="1">
+      <div class="orch__side orch__side--in">
+        <p class="orch__cap">Entram no Loop</p>
+        <div class="orch__list">
+          <span class="orch__chip">Operadoras &amp; parceiros</span>
+          <span class="orch__chip">Regras de negócio</span>
+          <span class="orch__chip">Dados comportamentais</span>
+          <span class="orch__chip">IA / ML</span>
+        </div>
+      </div>
+      <div class="orch__core">
+        <h4>Loop</h4>
+        <p>Camada de orquestração digital</p>
+      </div>
+      <div class="orch__side orch__side--out">
+        <p class="orch__cap">O Loop entrega</p>
+        <div class="orch__list">
+          <span class="orch__chip">Oferta certa</span>
+          <span class="orch__chip">Canal certo (web, SMS, URA, USSD)</span>
+          <span class="orch__chip">Momento certo</span>
+          <span class="orch__chip">Jornada do usuário final</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -112,16 +163,28 @@
       <p>Sem essa mudança, a operação seguiria presa a regras isoladas, baixa padronização e pouco reaproveitamento, limitando a adaptação por parceiro, país e canal. A meta era transformar uma ferramenta administrativa em um orquestrador capaz de combinar regras de negócio, segmentação, dados comportamentais e Next Best Action.</p>
     </div>
 
-    <p class="ph-label reveal">Antes e depois</p>
-    <div class="placeholders is-1 reveal" data-d="1">
-      <!-- Asset 02 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
-      <figure class="ph ph--img">
-        <button class="ph__frame" type="button" data-lightbox="assets/case-loop/02-operacao-orquestracao.svg" data-cap="Da operação manual à orquestração digital · comparativo conceitual" aria-label="Ampliar: Da operação manual à orquestração digital">
-          <img src="assets/case-loop/02-operacao-orquestracao.svg" alt="Comparativo conceitual entre campanhas manuais fragmentadas e uma operação centralizada orientada por dados e Next Best Action" loading="lazy" />
-          <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
-        </button>
-        <figcaption class="ph__cap"><b>Da operação manual à orquestração digital</b>Comparativo visual entre o modelo anterior de campanhas manuais e a evolução para uma operação centralizada, orientada por dados e Next Best Action.<small>Imagem a ser criada: before/after com Antes e Depois. Antes fragmentado/manual. Depois centralizado/orquestrado. Não usar tela real.</small></figcaption>
-      </figure>
+    <p class="ph-label reveal">Da ferramenta administrativa ao orquestrador</p>
+    <div class="ba reveal" data-d="1">
+      <div class="ba__col ba__col--before">
+        <p class="ba__tag">Antes</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>Campanhas configuradas manualmente</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>Regras isoladas por projeto e canal</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>Baixa padronização e reaproveitamento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>Pouca inteligência centralizada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>Operação lenta e fragmentada</li>
+        </ul>
+      </div>
+      <div class="ba__col ba__col--after">
+        <p class="ba__tag">Depois</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Orquestração centralizada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Segmentação e personalização</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>IA/ML aplicada à priorização de ofertas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Next Best Action</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Escala global entre operadoras e países</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -142,12 +205,15 @@
       <p>Tinha autonomia para conduzir descobertas, propor soluções e transformar necessidades técnicas, comerciais e operacionais em fluxos viáveis para o produto, sempre em alinhamento com Produto, Engenharia, Dados e Comercial. Mantive contato próximo com os usuários internos &mdash; sobretudo Marketing e Growth &amp; Performance &mdash; que operavam campanhas e traziam feedback sobre gargalos e oportunidades.</p>
     </div>
 
-    <div class="cs-block reveal" data-d="3" style="margin-top:clamp(28px,4vh,44px);">
-      <h3 class="cs-block__title">Colaboração multidisciplinar</h3>
-      <div class="cs__body">
-        <p>Embora minha atuação direta fosse como Product Designer Sênior, o Loop exigia colaboração constante com Produto, Engenharia, Growth &amp; Performance, Marketing, Dados e Comercial. Essa proximidade foi essencial para transformar regras técnicas, metas comerciais e necessidades operacionais em fluxos viáveis para a plataforma.</p>
-        <p>Trabalhei em parceria com PM, Head de Produto, Engenharia, Growth &amp; Performance, Marketing e Coordenação de Marketing, além de manter contato frequente com usuários internos da operação.</p>
-      </div>
+    <p class="ph-label reveal">Time do produto</p>
+    <div class="team reveal" data-d="1">
+      <div class="team__item"><span class="team__n">1</span><span class="team__r">Product Manager</span></div>
+      <div class="team__item"><span class="team__n">1</span><span class="team__r">Analista de produto</span></div>
+      <div class="team__item"><span class="team__n">1</span><span class="team__r">Head de produto</span></div>
+      <div class="team__item"><span class="team__n">7</span><span class="team__r">Desenvolvedores</span></div>
+      <div class="team__item"><span class="team__n">4</span><span class="team__r">Growth &amp; Performance</span></div>
+      <div class="team__item"><span class="team__n">8</span><span class="team__r">Marketing</span></div>
+      <div class="team__item"><span class="team__n">1</span><span class="team__r">Coordenação de Marketing</span></div>
     </div>
 
   </div>
@@ -178,18 +244,6 @@
         <p>Minha maior contribuição no Loop foi criar e evangelizar o Design System da plataforma. O produto havia crescido com funcionalidades legadas, padrões inconsistentes e componentes feitos para necessidades muito específicas, presos a decisões antigas de produto e tecnologia.</p>
         <p>Não paramos o produto para redesenhar tudo. A evolução foi gradual: organizar componentes, mapear padrões, separar versões antigas, atuais e futuras e ganhar consistência a cada entrega. Usei uma lógica inspirada em Atomic Design, documentada no Storybook, para alinhar reaproveitamento e manutenção com Engenharia.</p>
         <p>O Design System não era uma camada estética. Era infraestrutura de produto: consistência e velocidade para Produto, reaproveitamento e manutenção para Engenharia, clareza e confiabilidade para o Comercial, e evolução do legado sem parar o produto.</p>
-      </div>
-
-      <p class="ph-label">Asset principal</p>
-      <div class="placeholders is-1 reveal" data-d="1">
-        <!-- Asset 03 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
-        <figure class="ph ph--img">
-          <button class="ph__frame" type="button" data-lightbox="assets/case-loop/03-design-system.svg" data-cap="Design System como infraestrutura de produto · asset conceitual" aria-label="Ampliar: Design System como infraestrutura de produto">
-            <img src="assets/case-loop/03-design-system.svg" alt="Asset conceitual mostrando a evolução de componentes legados para padrões documentados, conectando Produto, Engenharia e Comercial" loading="lazy" />
-            <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
-          </button>
-          <figcaption class="ph__cap"><b>Design System como infraestrutura de produto</b>Asset conceitual mostrando a evolução de componentes legados para padrões documentados, conectando Produto, Engenharia e Comercial.<small>Imagem a ser criada: Legado → Atual → Futuro, relação com Storybook/documentação e valor por área. Este é o asset principal do case.</small></figcaption>
-        </figure>
       </div>
 
       <p class="ph-label">Evolução gradual dos componentes</p>
@@ -237,18 +291,6 @@
       <div class="cs__body">
         <p>Uma das features mais importantes foi configurar a posição inicial e o peso das ofertas antes da atuação automática do Loop, equilibrando dois modos de decisão: a automação baseada em dados e comportamento e o controle manual para objetivos comerciais.</p>
         <p>Se uma operadora queria incentivar uma recarga de R$25, a oferta podia ser fixada como prioridade inicial, enquanto o Loop seguia aprendendo com o comportamento e adaptando a experiência. Isso preservava o controle da operação sem travar a evolução para um modelo orientado por dados.</p>
-      </div>
-
-      <p class="ph-label">Controle + IA/ML</p>
-      <div class="placeholders is-1 reveal" data-d="1">
-        <!-- Asset 04 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
-        <figure class="ph ph--img">
-          <button class="ph__frame" type="button" data-lightbox="assets/case-loop/04-controle-nba.svg" data-cap="Controle operacional + Next Best Action · fluxo conceitual" aria-label="Ampliar: Controle operacional + Next Best Action">
-            <img src="assets/case-loop/04-controle-nba.svg" alt="Fluxo conceitual mostrando como a configuração inicial de posição e peso das ofertas convivia com a priorização automática por IA/ML" loading="lazy" />
-            <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
-          </button>
-          <figcaption class="ph__cap"><b>Controle operacional + Next Best Action</b>Fluxo conceitual mostrando como a configuração inicial de posição e peso das ofertas convivia com a priorização automática por IA/ML.<small>Imagem a ser criada: configuração inicial → publicação → coleta de comportamento → ajuste inteligente. Mostrar equilíbrio entre controle manual e IA/ML.</small></figcaption>
-        </figure>
       </div>
 
       <p class="ph-label">Lógica de Next Best Action</p>
@@ -466,6 +508,25 @@
 </div>
 
 <script src="app.js"></script>
+
+<script>
+  (function () {
+    function triggerPrint() { window.print(); }
+    function ready() {
+      var fontsReady = (document.fonts && document.fonts.ready)
+        ? document.fonts.ready
+        : Promise.resolve();
+      fontsReady.then(function () {
+        setTimeout(triggerPrint, 500);
+      });
+    }
+    if (document.readyState === 'complete') {
+      ready();
+    } else {
+      window.addEventListener('load', ready);
+    }
+  })();
+</script>
 
 </body>
 </html>

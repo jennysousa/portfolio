@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Smart Checkout · Jennifer Sousa</title>
-<meta name="description" content="Case de Product Design Leadership em uma plataforma B2B2C white-label e omnichannel para pagamentos digitais, recorrência e cobrança." />
+<meta name="description" content="Case de Product Design Management no Smart Checkout: liderança de Design em uma plataforma white-label de pagamentos, conectando produto, métricas, Design System e governança." />
 <link rel="stylesheet" href="brand-tokens.css" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="case.css" />
@@ -58,15 +58,30 @@
 <!-- ============ CASE HERO ============ -->
 <header class="section case-hero">
   <div class="container">
-    <p class="case-hero__kind reveal">Case · Liderança · Pagamentos</p>
+    <p class="case-hero__kind reveal">Case · Product Design · Pagamentos digitais</p>
     <h1 class="case-hero__title reveal" data-d="1">Smart Checkout</h1>
-    <p class="case-hero__sub reveal" data-d="2">Product Design Leadership em uma plataforma B2B2C white-label e omnichannel para pagamentos digitais, recorrência e cobrança.</p>
+    <p class="case-hero__sub reveal" data-d="2">Como Product Design Manager, liderei as decisões de UX de um checkout de pagamentos digitais, equilibrando experiência, confiabilidade, viabilidade técnica e escala B2B/B2B2C entre indústrias, parceiros e canais.</p>
+
+    <div class="case-hero__role reveal" data-d="2">
+      <b>Product Design Manager</b>
+      <span>Plataforma B2B2C SaaS de pagamentos digitais, recorrência e cobrança.</span>
+    </div>
+
     <div class="case-hero__meta reveal" data-d="3">
-      <span>UX Strategy</span>
-      <span>DesignOps</span>
+      <span>Product Design Management</span>
+      <span>B2B2C SaaS</span>
+      <span>Pagamentos digitais</span>
+      <span>White-label</span>
       <span>Design System</span>
-      <span>Product Analytics</span>
-      <span>B2B2C white-label</span>
+      <span>UX Metrics</span>
+    </div>
+
+    <div class="hero-stats reveal" data-d="3">
+      <div class="hstat"><span class="hstat__fig">R$3,5<em> bi</em></span><span class="hstat__label">em TPV no 1T26</span></div>
+      <div class="hstat"><span class="hstat__fig">30</span><span class="hstat__label">parceiros enterprise</span></div>
+      <div class="hstat"><span class="hstat__fig">4</span><span class="hstat__label">indústrias: telecom, utilities, educação e saúde</span></div>
+      <div class="hstat"><span class="hstat__fig">3</span><span class="hstat__label">formatos: iFrame, SDK e standalone</span></div>
+      <div class="hstat"><span class="hstat__fig">14</span><span class="hstat__label">métodos na interface orquestrada</span></div>
     </div>
   </div>
 </header>
@@ -78,10 +93,33 @@
       <span class="cs__num">01</span>
       <h2 class="cs__title">Contexto</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para descrever o contexto do produto, o mercado de pagamentos digitais e os desafios da plataforma.</p>
+    <div class="cs__body reveal" data-d="1">
+      <p>O Smart Checkout era uma plataforma white-label de pagamentos digitais, usada em diferentes formatos de integração como iFrame, SDK e standalone, e aplicada a jornadas de pagamento em telecom, utilities, educação e saúde.</p>
+      <p>Cada indústria trazia regras, tickets, comportamentos e necessidades comerciais diferentes. Além da squad principal, Design colaborava com produto, tecnologia, dados, comercial, customer success e novos negócios.</p>
+      <p>A complexidade não estava só nos métodos de pagamento. Cada nova vertical mudava o tipo de conta, o comportamento do pagador, as regras de cobrança, o ticket médio e as necessidades do parceiro. O produto precisava funcionar tanto para uma conta ativa enviada antes do vencimento quanto para jornadas de cobrança, recorrência e retentativa.</p>
+      <p>O Smart Checkout fazia parte de um ecossistema usado por grandes contas. No 1T26, a Bemobi indicava atender 12 das 15 maiores empresas de serviços recorrentes do Brasil em SaaS e pagamentos.</p>
     </div>
+
+    <p class="ph-label reveal">Mapa de complexidade do produto</p>
+    <div class="spec reveal" data-d="1">
+      <div class="spec__row">
+        <span class="spec__k">Indústrias</span>
+        <ul class="chips-row"><li>Telecom</li><li>Utilities</li><li>Educação</li><li>Saúde</li></ul>
+      </div>
+      <div class="spec__row">
+        <span class="spec__k">Canais</span>
+        <ul class="chips-row"><li>iFrame</li><li>SDK</li><li>Standalone</li></ul>
+      </div>
+      <div class="spec__row">
+        <span class="spec__k">Métodos</span>
+        <ul class="chips-row"><li>Pix</li><li>Cartão</li><li>Wallets</li><li>Recorrência</li><li>Pagamento combinado</li></ul>
+      </div>
+      <div class="spec__row">
+        <span class="spec__k">Camadas de decisão</span>
+        <ul class="chips-row"><li>UX</li><li>Conteúdo</li><li>Visual</li><li>Tecnologia</li><li>Dados</li><li>Comercial</li></ul>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:20px;font-size:var(--fs-caption);color:var(--fg-3);max-width:60ch;">A dificuldade estava na combinação entre essas camadas, não em cada uma isoladamente.</p>
   </div>
 </section>
 
@@ -92,9 +130,32 @@
       <span class="cs__num">02</span>
       <h2 class="cs__title">Problema</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para o problema central, dores dos parceiros e usuários e a complexidade das jornadas de checkout.</p>
+    <div class="cs__body reveal" data-d="1">
+      <p>O desafio não era desenhar uma jornada de pagamento. Era evoluir um checkout capaz de pagar diferentes contas e cobranças, em diferentes contextos, canais e métodos, sem virar uma coleção de customizações específicas para cada parceiro.</p>
+      <p>A pressão por adaptação vinha das áreas comerciais e dos parceiros. Ao mesmo tempo, o produto precisava continuar escalável, consistente e preparado para novas indústrias, novos métodos de pagamento e novas jornadas recorrentes.</p>
+      <p>Na prática, cada adaptação precisava responder a duas perguntas ao mesmo tempo: resolve o problema daquele parceiro e fortalece o produto para os próximos?</p>
+    </div>
+
+    <p class="ph-label reveal">A tensão central do produto</p>
+    <div class="orch reveal" data-d="1">
+      <div class="orch__side orch__side--in">
+        <p class="orch__cap">Pressão por adaptação</p>
+        <div class="orch__list">
+          <span class="orch__chip">Parceiros pedem customizações</span>
+          <span class="orch__chip">Comercial precisa vender</span>
+        </div>
+      </div>
+      <div class="orch__core">
+        <h4>Equilíbrio</h4>
+        <p>Customização comercial × escala white-label</p>
+      </div>
+      <div class="orch__side orch__side--out">
+        <p class="orch__cap">O produto precisa sustentar</p>
+        <div class="orch__list">
+          <span class="orch__chip">Escala entre indústrias e canais</span>
+          <span class="orch__chip">Consistência white-label</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -106,9 +167,50 @@
       <span class="cs__num">03</span>
       <h2 class="cs__title">Meu papel</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para detalhar minha atuação como liderança de design, escopo de responsabilidades e times envolvidos.</p>
+    <div class="cs__body cs-lead reveal" data-d="1">
+      <p>Atuei como Product Design Manager no Smart Checkout, liderando as decisões de experiência de um produto de pagamentos digitais.</p>
+    </div>
+    <div class="cs__body reveal" data-d="2" style="margin-top:24px;">
+      <p>Minha contribuição não estava na aprovação final das telas, e sim no sistema de trabalho que permitia ao time decidir UX, conteúdo e visual com consistência, dados e escala.</p>
+    </div>
+
+    <div class="cs-block reveal" data-d="3" style="margin-top:clamp(28px,4vh,44px);">
+      <h3 class="cs-block__title">Atuação como liderança de design</h3>
+      <div class="cs__body">
+        <p>Como Product Design Manager, minha atuação no Smart Checkout combinava liderança de design, estratégia de UX e coordenação entre áreas. O produto exigia alinhamento constante com Produto, Engenharia, Dados, Comercial, Operações e stakeholders executivos para equilibrar experiência do usuário, viabilidade técnica, prioridades de negócio e impacto em conversão.</p>
+        <p>Trabalhei em parceria com PMs, Engenharia, Dados, Comercial, Operações e lideranças executivas, além de orientar designers de Product, Content e Visual Design nas decisões de experiência, qualidade, consistência e evolução do produto.</p>
+      </div>
+    </div>
+
+    <p class="ph-label reveal">Três camadas de atuação</p>
+    <div class="action-cards reveal" data-d="1">
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></div>
+        <h4 class="acard__name">Estratégia de UX</h4>
+        <p class="acard__desc">Definição de caminhos de experiência, análise de dados, identificação de fricções e priorização de melhorias.</p>
+      </div>
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+        <h4 class="acard__name">Liderança e coordenação</h4>
+        <p class="acard__desc">Orientação de designers e alinhamento com Produto, Engenharia, Dados, Comercial e liderança.</p>
+      </div>
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg></div>
+        <h4 class="acard__name">Produto e negócio</h4>
+        <p class="acard__desc">Decisões de conversão, métodos de pagamento, recorrência, experiência B2B/B2C/B2B2C e viabilidade técnica.</p>
+      </div>
+    </div>
+
+    <p class="ph-label">Visão sistêmica</p>
+    <div class="placeholders is-1 reveal" data-d="1">
+      <!-- Asset · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
+      <figure class="ph ph--img">
+        <button class="ph__frame" type="button" data-lightbox="assets/case-smart-checkout/01-visao-sistemica.svg" data-cap="Visão sistêmica do Smart Checkout · asset conceitual" aria-label="Ampliar: Visão sistêmica do Smart Checkout">
+          <img src="assets/case-smart-checkout/01-visao-sistemica.svg" alt="Diagrama conceitual mostrando métodos de pagamento, canais (iFrame, SDK e standalone) e a jornada de pagamento conectados sob uma camada única de experiência" loading="lazy" />
+          <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
+        </button>
+        <figcaption class="ph__cap"><b>Visão sistêmica do Smart Checkout</b>Como métodos de pagamento, canais (iFrame, SDK e standalone) e jornadas de cobrança se conectavam sob uma camada única de experiência.<small>Imagem a ser criada: checkout no centro, métodos à esquerda, canais à direita e a jornada de pagamento como saída. Não usar interface real.</small></figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -120,9 +222,50 @@
       <span class="cs__num">04</span>
       <h2 class="cs__title">Minha abordagem</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para as frentes de trabalho, métodos, decisões de UX e colaboração com produto, engenharia e parceiros.</p>
+
+    <!-- 4.1 Da operação reativa à prática orientada por produto -->
+    <div class="cs-block reveal">
+      <h3 class="cs-block__title">De uma operação reativa para uma prática orientada por produto e dados</h3>
+      <div class="cs__body">
+        <p>Antes da minha atuação, o produto era guiado por demandas comerciais. Parceiros pediam adaptações, o comercial levava ao produto e as soluções eram executadas com pouca visibilidade de métricas, sem Design System estruturado, sem especialistas de Content e Visual e sem acompanhamento pós-release.</p>
+        <p>Na minha liderança, Design passou a operar mais próximo de PMs, tecnologia e diretoria, com UX Metrics, PostHog no discovery, Design System, governança de validação, Dev Mode no handoff e follow-up pós-lançamento como parte do processo.</p>
+      </div>
+
+      <p class="ph-label">Antes e depois da operação</p>
+      <div class="placeholders is-1 reveal" data-d="1">
+        <!-- Asset 02 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
+        <figure class="ph ph--img">
+          <button class="ph__frame" type="button" data-lightbox="assets/case-smart-checkout/02-operacao-produto-dados.svg" data-cap="Da operação reativa à prática orientada por produto e dados · comparativo conceitual" aria-label="Ampliar: Da operação reativa à prática orientada por produto e dados">
+            <img src="assets/case-smart-checkout/02-operacao-produto-dados.svg" alt="Comparativo conceitual da evolução do processo de design: de demandas comerciais isoladas para decisões com UX Metrics, PostHog, Design System, governança e follow-up" loading="lazy" />
+            <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
+          </button>
+          <figcaption class="ph__cap"><b>Da operação reativa à prática orientada por produto e dados</b>Comparativo visual da evolução do processo de design: de demandas comerciais isoladas para decisões com UX Metrics, PostHog, Design System, governança e follow-up.<small>Imagem a ser criada: before/after com Antes e Depois. Não usar interface real.</small></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 4.2 Proteger o produto sem travar o negócio -->
+    <div class="cs-block reveal">
+      <h3 class="cs-block__title">Proteger o produto sem travar o negócio</h3>
+      <div class="cs__body">
+        <p>Em um produto B2B2C, a pressão por customização vinha dos parceiros e do comercial. Meu papel era ajudar o time a separar pedidos pontuais de oportunidades reais de evolução, preservando a coerência do produto sem ignorar necessidades comerciais relevantes.</p>
+      </div>
+
+      <div class="statement reveal" data-d="1">
+        <p>Essa adaptação serve só para um parceiro ou <em>fortalece o produto</em> para outras indústrias, canais e jornadas?</p>
+      </div>
+
+      <p class="ph-label">Framework de decisão</p>
+      <div class="placeholders is-1 reveal" data-d="1">
+        <!-- Asset 03 · substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
+        <figure class="ph ph--img">
+          <button class="ph__frame" type="button" data-lightbox="assets/case-smart-checkout/03-framework-decisao.svg" data-cap="Framework de decisão para customizações · critérios de avaliação" aria-label="Ampliar: Framework de decisão para customizações">
+            <img src="assets/case-smart-checkout/03-framework-decisao.svg" alt="Critérios usados para avaliar se uma adaptação resolvia apenas uma demanda pontual ou fortalecia o produto para novas indústrias, canais e jornadas" loading="lazy" />
+            <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
+          </button>
+          <figcaption class="ph__cap"><b>Framework de decisão para customizações</b>Critérios usados para avaliar se uma adaptação resolvia apenas uma demanda pontual ou fortalecia o produto para novas indústrias, canais e jornadas.<small>Imagem a ser criada: pergunta central e os seis critérios de avaliação. Não usar interface real.</small></figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -134,9 +277,103 @@
       <span class="cs__num">05</span>
       <h2 class="cs__title">Ações tomadas</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para as principais ações e entregas ao longo do projeto.</p>
+    <div class="cs__body reveal" data-d="1">
+      <p>Liderei frentes que ajudaram Design a operar com mais clareza, qualidade e impacto no produto.</p>
+    </div>
+
+    <div class="action-cards reveal" data-d="1" style="margin-top:clamp(28px,4vh,40px);">
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg></div>
+        <h4 class="acard__name">Design System</h4>
+        <p class="acard__desc">Criei e governei tokens, componentes e documentação, com handoff em Dev Mode para aproximar Figma e código.</p>
+      </div>
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 11 13 15 9"></polyline></svg></div>
+        <h4 class="acard__name">Governança de qualidade</h4>
+        <p class="acard__desc">Formalizei uma etapa de Internal Validation no Jira, com revisão de craft, conteúdo e visual antes da validação externa.</p>
+      </div>
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+        <h4 class="acard__name">Dados para decisão</h4>
+        <p class="acard__desc">Levei UX Metrics e eventos do PostHog para o discovery e a priorização, com a intenção de pagamento como North Star.</p>
+      </div>
+      <div class="acard">
+        <div class="acard__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v6h6"></path><path d="M3.51 9a9 9 0 1 0 2.13-3.36L3 8"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+        <h4 class="acard__name">Erro e fallback</h4>
+        <p class="acard__desc">Reformulei a estratégia de mensagens de erro e retentativa, equilibrando clareza e segurança.</p>
+      </div>
+    </div>
+
+    <div class="cs__body reveal" data-d="1" style="margin-top:clamp(24px,3vh,32px);">
+      <p>No erro e fallback, o desafio era concreto. Antes, falhas diferentes retornavam uma mensagem genérica e a interface jogava o pagador para Pix como segunda opção. Era preciso orientar a retentativa sem expor informações sensíveis, sem abrir brechas de antifraude e sem reduzir o share de parcelamento.</p>
+    </div>
+
+    <!-- Governança no Jira -->
+    <p class="ph-label reveal">Fluxo de governança no Jira</p>
+    <div class="flow reveal" data-d="1">
+      <div class="flow__node">
+        <span class="flow__k">01</span><span class="flow__v">To Do</span>
+        <p class="flow__note">Demanda priorizada e pronta para começar.</p>
+      </div>
+      <div class="flow__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+      <div class="flow__node">
+        <span class="flow__k">02</span><span class="flow__v">Doing</span>
+        <p class="flow__note">Execução de UX, conteúdo e visual.</p>
+      </div>
+      <div class="flow__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+      <div class="flow__node">
+        <span class="flow__k">03</span><span class="flow__v">Internal Validation</span>
+        <p class="flow__note">Craft, conteúdo, visual e liderança.</p>
+      </div>
+      <div class="flow__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+      <div class="flow__node">
+        <span class="flow__k">04</span><span class="flow__v">External Validation</span>
+        <p class="flow__note">PMs, áreas parceiras e stakeholders.</p>
+      </div>
+      <div class="flow__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+      <div class="flow__node">
+        <span class="flow__k">05</span><span class="flow__v">Done</span>
+        <p class="flow__note">Entrega aprovada e pronta para release.</p>
+      </div>
+    </div>
+
+    <!-- Asset 04 · Design System -->
+    <p class="ph-label">Design System</p>
+    <div class="placeholders is-1 reveal" data-d="1">
+      <!-- substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
+      <figure class="ph ph--img">
+        <button class="ph__frame" type="button" data-lightbox="assets/case-smart-checkout/04-design-system.svg" data-cap="Design System como infraestrutura de escala · asset conceitual" aria-label="Ampliar: Design System como infraestrutura de escala">
+          <img src="assets/case-smart-checkout/04-design-system.svg" alt="Asset conceitual com tokens, componentes, documentação e Dev Mode aproximando Figma, código e decisões de produto" loading="lazy" />
+          <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
+        </button>
+        <figcaption class="ph__cap"><b>Design System como infraestrutura de escala</b>Tokens, componentes, documentação e Dev Mode aproximando Figma, código e decisões de produto.<small>Imagem a ser criada: amostra conceitual de tokens, biblioteca de componentes e exemplo de Dev Mode no handoff. Não usar interface real.</small></figcaption>
+      </figure>
+    </div>
+
+    <!-- Asset 05 · Antes e depois do fallback -->
+    <p class="ph-label">Erro e fallback</p>
+    <div class="placeholders is-1 reveal" data-d="1">
+      <!-- substitua o src do <img> e o data-lightbox pelo seu asset final (PNG/JPG) quando estiver pronto -->
+      <figure class="ph ph--img">
+        <button class="ph__frame" type="button" data-lightbox="assets/case-smart-checkout/05-fallback-antes-depois.svg" data-cap="Antes e depois conceitual do fallback · representação anonimizada" aria-label="Ampliar: Antes e depois conceitual do fallback">
+          <img src="assets/case-smart-checkout/05-fallback-antes-depois.svg" alt="Representação anonimizada da evolução da experiência de erro e retentativa, equilibrando clareza, segurança e intenção de pagamento" loading="lazy" />
+          <span class="ph__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg></span>
+        </button>
+        <figcaption class="ph__cap"><b>Antes e depois conceitual do fallback</b>Representação anonimizada da evolução da experiência de erro e retentativa, equilibrando clareza, segurança e intenção de pagamento.<small>Antes: erro genérico, Pix em destaque, pouca orientação. Depois: mensagem contextual, retentativa orientada e fallback alinhado à intenção de pagamento. Sem tela real.</small></figcaption>
+      </figure>
+    </div>
+
+    <!-- Card secundário: amplificar boas decisões -->
+    <div class="sidecard reveal" data-d="1">
+      <p class="sidecard__tag">Destaque · Amplificar boas decisões do time</p>
+      <h3 class="sidecard__title">Skeleton loading no Pix Copia e Cola</h3>
+      <p>Outro exemplo foi a priorização de skeleton loading em uma etapa crítica da jornada Pix Copia e Cola. A oportunidade foi levantada por uma Product Designer Sênior do time, e meu papel foi defender a iniciativa em fóruns de decisão, conectando a microinteração à percepção de performance.</p>
+      <p>Depois da implementação, o resultado foi bem recebido em reunião executiva e o CEO pediu a expansão do padrão para outras telas.</p>
+      <div class="sidecard__par">
+        <span><b>Problema</b>Percepção de demora</span>
+        <span><b>Ação</b>Skeleton loading</span>
+        <span><b>Resultado</b>Padrão reconhecido e expandido</span>
+      </div>
     </div>
   </div>
 </section>
@@ -148,9 +385,22 @@
       <span class="cs__num">06</span>
       <h2 class="cs__title">Resultados observados</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para os resultados, impactos no produto e indicadores de evolução.</p>
+    <div class="cs__body reveal" data-d="1">
+      <p>Os avanços apareceram na forma como o time passou a decidir, priorizar e acompanhar o produto.</p>
+    </div>
+
+    <ul class="cs-list cs-list--orange reveal" data-d="2">
+      <li>Design passou a participar com mais força de discovery, priorização e decisões de produto.</li>
+      <li>UX Metrics e PostHog passaram a orientar hipóteses, investigações e follow-up pós-lançamento.</li>
+      <li>O Design System trouxe mais consistência, velocidade e alinhamento com tecnologia.</li>
+      <li>A governança de validação elevou a qualidade de UX, conteúdo e visual antes da exposição a stakeholders.</li>
+      <li>As decisões passaram a olhar o produto inteiro, não só demandas isoladas de parceiros.</li>
+      <li>O time ganhou clareza de responsabilidades, critérios de qualidade e colaboração entre especialidades.</li>
+      <li>A solução de erro e fallback foi implementada e entrou em rollout gradual para os parceiros.</li>
+    </ul>
+
+    <div class="statement reveal" data-d="1">
+      <p>Menos pedidos avulsos. Mais decisões de produto sustentadas por <em>dados, governança e qualidade.</em></p>
     </div>
   </div>
 </section>
@@ -162,9 +412,13 @@
       <span class="cs__num">07</span>
       <h2 class="cs__title">Aprendizados e próximos passos</h2>
     </div>
-    <div class="cs-draft reveal" data-d="1">
-      <span class="cs-draft__tag">Em construção</span>
-      <p>Espaço reservado para os aprendizados do case e os próximos passos.</p>
+    <div class="cs__body reveal" data-d="1">
+      <p>Em pagamentos, a experiência não existe só para reduzir atrito. Ela equilibra usabilidade, segurança, clareza, viabilidade técnica, regras de negócio e sustentabilidade comercial.</p>
+    </div>
+
+    <p class="ph-label reveal">Próximos passos</p>
+    <div class="cs__body reveal" data-d="2">
+      <p>Os próximos passos estavam em acompanhar o rollout por parceiro, aprofundar o uso de UX Metrics e seguir evoluindo o Design System como base para novos métodos, canais e jornadas.</p>
     </div>
   </div>
 </section>
@@ -172,14 +426,21 @@
 <!-- ============ CTA ============ -->
 <section class="case-cta">
   <div class="container">
-    <h2 class="case-cta__title reveal">Vamos <em>conversar?</em></h2>
-    <div class="case-cta__row reveal" data-d="1">
-      <a class="btn-ghost btn-ghost--primary" href="index.html">
+    <p class="cs__body reveal" style="max-width:62ch;margin:0 auto clamp(36px,5vh,56px);text-align:center;">No Smart Checkout, meu papel foi conduzir Design de uma atuação reativa para uma camada estratégica de produto, dados e escala, protegendo a simplicidade da experiência enquanto o produto se tornava mais complexo por trás dela.</p>
+    <h2 class="case-cta__title reveal" data-d="1">Vamos <em>conversar?</em></h2>
+    <div class="case-cta__row reveal" data-d="2">
+      <a class="btn-ghost btn-ghost--primary" href="index.html#contato">Vamos nos falar?</a>
+    </div>
+    <nav class="case-nav reveal" data-d="3" aria-label="Navegação entre cases">
+      <a class="btn-ghost btn-ghost--link" href="index.html">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         Voltar para a página inicial
       </a>
-      <a class="btn-ghost btn-ghost--link" href="index.html#contato">Vamos nos falar?</a>
-    </div>
+      <a class="btn-ghost btn-ghost--link btn-ghost--next" href="Case Loop.html">
+        Próximo case: Loop
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </nav>
   </div>
 </section>
 
@@ -190,6 +451,24 @@
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
   </button>
 </footer>
+
+<!-- ============ LIGHTBOX / SLIDESHOW (ativa quando houver imagens) ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
+  <button class="lb__btn lb__close" type="button" aria-label="Fechar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
+  <button class="lb__btn lb__prev" type="button" aria-label="Imagem anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+  <button class="lb__btn lb__next" type="button" aria-label="Próxima imagem">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+  <div class="lb__stage">
+    <span class="lb__count" id="lbCount"></span>
+    <img class="lb__img" id="lbImg" alt="" />
+    <span class="lb__cap" id="lbCap"></span>
+  </div>
+</div>
 
 <script src="app.js"></script>
 

@@ -8,11 +8,11 @@
    Bemobi uses ABC Ginto Normal (Dinamo) for display and
    Google Sans for product UI. Neither is licensed on Google
    Fonts. Substitutions (flagged in README):
-     ABC Ginto   → Space Grotesk  (geometric sans, tight)
-     Google Sans → DM Sans        (friendly geometric)
+     ABC Ginto   → Sora           (geometric sans, tight)
+     Google Sans → Plus Jakarta Sans (friendly geometric)
    We ship these with the weights used in the Figma file. */
 
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   /* ----- Color: primary (azuis + lilás) ----- */
@@ -84,8 +84,8 @@
   --s-10: 132px;
 
   /* ----- Typography families ----- */
-  --font-display: "Space Grotesk", "ABC Ginto Normal", ui-sans-serif, system-ui, sans-serif;
-  --font-ui:      "DM Sans", "Google Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", "ABC Ginto Normal", ui-sans-serif, system-ui, sans-serif;
+  --font-ui:      "Plus Jakarta Sans", "Google Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", monospace;
 
   /* ----- Type scale (from brandbook: H1 96 / H2 72 / H3 56 / H4 32 / body 24 / caption 20) ----- */
