@@ -438,6 +438,11 @@ img.about-photo--filled {
 }
 /* opt-in: center a thumbnail when the focal point is central (e.g. radial diagrams) */
 .ph--img.ph--center .ph__frame img { object-position: center top; }
+/* opt-in: show the full diagram, uncropped (informational images that contain their own title) */
+.ph--img.ph--full .ph__frame { aspect-ratio: auto; background: #ffffff; }
+.placeholders.is-1 .ph--full .ph__frame,
+.ph--full .ph__frame { aspect-ratio: auto; }
+.ph--full .ph__frame img { height: auto; object-fit: contain; object-position: center; }
 .ph--img:hover .ph__frame img { transform: scale(1.04); }
 .ph__zoom {
   position: absolute; top: 12px; right: 12px;
