@@ -95,6 +95,7 @@
 .ph-label::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--link); }
 .placeholders {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  margin-top: clamp(32px, 4.5vh, 56px);
 }
 .ph {
   margin: 0; display: flex; flex-direction: column;
@@ -383,7 +384,7 @@ img.about-photo--filled {
 }
 
 /* ---------- Action cards (ações tomadas) ---------- */
-.action-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 8px; }
+.action-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
 .acard {
   border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--panel);
   padding: clamp(22px, 2.2vw, 30px); display: flex; flex-direction: column; gap: 15px;
@@ -596,3 +597,57 @@ img.about-photo--filled {
 .dsvalue__k { font-family: var(--font-display); font-weight: 600; font-size: clamp(16px, 1.4vw, 20px); letter-spacing: -0.02em; color: var(--ink); margin: 0 0 8px; }
 .dsvalue__v { font-size: clamp(13.5px, 1.05vw, 16px); line-height: 1.5; color: var(--muted); margin: 0; }
 @media (max-width: 720px) { .dsvalue { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Smart Checkout — rewrite (short & scannable)
+   ============================================================ */
+
+/* "Em breve" asset placeholders (clickable → lightbox) */
+.ph .ph__frame[data-lightbox] { cursor: zoom-in; }
+.ph__soon { display: flex; flex-direction: column; align-items: center; gap: 13px; }
+.ph__soon svg { width: 40px !important; height: 40px !important; color: var(--accent); opacity: .92; }
+.ph__soon span {
+  font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted-2);
+}
+.ph[data-asset] .ph__frame:hover .ph__soon svg { opacity: 1; }
+
+/* Process steps (Minha abordagem) */
+.steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 8px; }
+.step { grid-column: span 2; }
+.steps .step:nth-child(4), .steps .step:nth-child(5) { grid-column: span 3; }
+@media (max-width: 920px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .step, .steps .step:nth-child(4), .steps .step:nth-child(5) { grid-column: auto; }
+}
+@media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+.step {
+  border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--panel);
+  padding: clamp(20px, 2vw, 26px); display: flex; flex-direction: column; gap: 9px;
+  transition: border-color .3s ease, transform .3s ease, background .3s ease;
+}
+.step:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--panel-2); }
+.step__n { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+.step__t { font-family: var(--font-display); font-weight: 600; font-size: clamp(15px, 1.3vw, 18px); letter-spacing: -0.02em; color: var(--ink); margin: 0; }
+.step__d { font-size: 13.5px; line-height: 1.5; color: var(--muted); margin: 0; }
+
+/* Result cards bullet list (reuses .dsvalue cells) */
+.dsvalue__cell ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 11px; }
+.dsvalue__cell li { position: relative; padding-left: 19px; font-size: 14.5px; line-height: 1.5; color: var(--muted); }
+.dsvalue__cell li::before { content: ""; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); opacity: .7; transform: rotate(45deg); }
+
+/* Closing-line phrase that ends a decision block */
+.cs-closing { margin-top: 22px; font-family: var(--font-display); font-weight: 500; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.35; letter-spacing: -0.02em; color: var(--ink); max-width: 52ch; text-wrap: balance; }
+.cs-closing em { font-style: normal; color: var(--accent); }
+
+/* Centered contact links inside the closing CTA */
+.case-cta__contacts { max-width: 560px; margin: 40px auto 0; text-align: left; }
+
+/* Compact bullet list inside decision blocks */
+.mini-list { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; max-width: 76ch; }
+.mini-list li { position: relative; padding-left: 21px; font-size: clamp(14px, 1.05vw, 15.5px); line-height: 1.55; color: var(--muted); }
+.mini-list li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); opacity: .7; transform: rotate(45deg); }
+
+/* Takeaway line that closes a decision block */
+.block-close { margin: 18px 0 0; font-size: clamp(14.5px, 1.15vw, 17px); line-height: 1.55; color: var(--ink); max-width: 76ch; font-weight: 500; }
+.block-close em { font-style: normal; color: var(--accent); }
