@@ -81,8 +81,7 @@
       var h = document.documentElement.scrollHeight - window.innerHeight;
       progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
     }
-    var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (hero && !animOff() && !reducedMotion && y < window.innerHeight) {
+    if (hero && !animOff() && y < window.innerHeight) {
       hero.style.transform = "translateY(" + (y * 0.14) + "px)";
       hero.style.opacity = String(Math.max(0, 1 - (y / window.innerHeight) * 1.1));
     }
@@ -124,10 +123,8 @@
       lastFocused = document.activeElement;
       lb.hidden = false;
       render();
-      requestAnimationFrame(function () {
-        lb.classList.add("open");
-        lb.querySelector('.lb__close').focus();
-      });
+      // next frame so the transition runs
+      requestAnimationFrame(function () { lb.classList.add("open"); });
       document.body.style.overflow = "hidden";
     }
     function close() {
@@ -167,17 +164,6 @@
       if (e.key === "Escape") close();
       else if (e.key === "ArrowRight") go(1);
       else if (e.key === "ArrowLeft") go(-1);
-      else if (e.key === "Tab") {
-        // Focus trap: cycle focus within lightbox
-        var focusable = lb.querySelectorAll('button:not([disabled])');
-        var first = focusable[0];
-        var last = focusable[focusable.length - 1];
-        if (e.shiftKey) {
-          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
-        } else {
-          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
-        }
-      }
     });
 
     /* swipe on touch */

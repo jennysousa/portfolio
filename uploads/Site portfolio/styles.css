@@ -10,7 +10,7 @@
   --panel-2:   #111116;
   --ink:       #FFFFFF;
   --muted:     #A2A2AC;   /* body text — 7.8:1 on black */
-  --muted-2:   #7B7B85;   /* tertiary / meta — WCAG AA ≥4.5:1 on #000 */
+  --muted-2:   #6B6B74;   /* tertiary / meta */
   --accent:    #52C2E8;   /* turquoise — highlights (tweakable) */
   --link:      #FF8000;   /* orange — real links only */
   --hairline:  rgba(255,255,255,0.12);
@@ -22,7 +22,7 @@
 
 * { box-sizing: border-box; }
 
-html { background: var(--bg); color: var(--ink); scroll-behavior: smooth; scroll-padding-top: 90px; -webkit-text-size-adjust: 100%; }
+html { background: var(--bg); color: var(--ink); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
@@ -38,37 +38,6 @@ body {
 }
 
 ::selection { background: var(--accent); color: #001018; }
-
-/* ---------- Skip link ---------- */
-.skip-link {
-  position: absolute; left: -9999px; top: auto;
-  width: 1px; height: 1px; overflow: hidden; z-index: 999;
-  font-family: var(--font-ui); font-weight: 700; font-size: 14px;
-  text-decoration: none; color: #001018;
-  background: var(--accent); border-radius: 8px; padding: 12px 24px;
-  white-space: nowrap;
-}
-.skip-link:focus {
-  position: fixed; top: 12px; left: 12px;
-  width: auto; height: auto;
-  z-index: 9999;
-}
-
-/* ---------- Focus-visible ---------- */
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 3px;
-}
-:focus:not(:focus-visible) { outline: none; }
-.nav__cta:focus-visible,
-.clink:focus-visible,
-.lang-toggle:focus-visible,
-.btn-ghost:focus-visible,
-.case:focus-visible {
-  outline-offset: 4px;
-  border-radius: 999px;
-}
 
 a { color: var(--link); text-decoration: none; }
 
@@ -135,17 +104,6 @@ p { color: var(--muted); margin: 0; font-size: inherit; line-height: inherit; le
 }
 .nav__cta:hover { border-color: var(--accent); color: var(--accent); }
 .nav__cta::after { display: none; }
-
-/* ---------- Language toggle ---------- */
-.lang-toggle {
-  background: none; border: 1px solid var(--hairline); border-radius: 999px;
-  padding: 6px 14px; color: var(--muted); cursor: pointer;
-  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
-  letter-spacing: 0.1em; white-space: nowrap;
-  transition: border-color .25s ease, color .25s ease;
-}
-.lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
-
 @media (max-width: 940px) {
   .nav__links .nav__link:not(.nav__cta) { display: none; }
 }
@@ -402,8 +360,7 @@ html[data-anim="off"] .lines span > i { transform: none !important; transition: 
 html[data-anim="off"] .hero__cue svg { animation: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
-  .reveal { opacity: 1 !important; transform: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .lines span > i { transform: none !important; }
   .hero__cue svg { animation: none; }
 }

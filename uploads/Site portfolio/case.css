@@ -246,13 +246,13 @@
 @media (max-width: 540px) { .case-nav { justify-content: center; } }
 
 /* ---------- About page ---------- */
-.about-page { display: grid; grid-template-columns: 1fr; gap: clamp(36px, 5vw, 72px); align-items: center; }
+.about-page { display: grid; grid-template-columns: 1fr; gap: clamp(36px, 5vw, 72px); align-items: start; }
 @media (min-width: 900px) {
-  .about-page { grid-template-columns: auto 1fr; }
+  .about-page { grid-template-columns: 0.85fr 1.15fr; }
 }
 /* Photo placeholder — replace the whole <figure> with an <img> when the photo is ready */
 .about-photo {
-  margin: 0; position: relative; aspect-ratio: 1 / 1; width: 100%; max-width: 280px;
+  margin: 0; position: relative; aspect-ratio: 4 / 5; width: 100%;
   border: 1px dashed var(--hairline); border-radius: var(--r-xl); overflow: hidden;
   background: repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 16px, transparent 16px 32px), var(--panel);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
@@ -426,12 +426,11 @@ img.about-photo--filled {
 
 /* ---------- Image thumbnails (clickable → lightbox) ---------- */
 .ph--img .ph__frame {
-  padding: 0; border: none;
+  padding: 0;
   background: #ffffff;
   cursor: zoom-in;
   overflow: hidden;
 }
-.ph__frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: var(--r-md); }
 .ph--img .ph__frame img {
   width: 100%; height: 100%;
   object-fit: cover; object-position: left top;
@@ -502,7 +501,6 @@ img.about-photo--filled {
   transition: background .25s ease, border-color .25s ease, transform .25s ease;
 }
 .lb__btn:hover { background: var(--bmb-azul-bemobi); border-color: var(--bmb-azul-bemobi); transform: scale(1.06); }
-.lb__btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .lb__btn svg { width: 22px; height: 22px; }
 .lb__prev { left: clamp(10px, 3vw, 46px); top: 50%; transform: translateY(-50%); }
 .lb__prev:hover { transform: translateY(-50%) scale(1.06); }

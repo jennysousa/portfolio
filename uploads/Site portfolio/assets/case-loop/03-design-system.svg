@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650" role="img" aria-label="Design System como infraestrutura de produto — asset conceitual a ser inserido">
+  <defs>
+    <pattern id="hatch" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(135)">
+      <rect width="28" height="28" fill="none"></rect>
+      <line x1="0" y1="0" x2="0" y2="28" stroke="rgba(255,255,255,0.022)" stroke-width="14"></line>
+    </pattern>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101015"></stop>
+      <stop offset="1" stop-color="#0B0B0E"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="650" fill="url(#glow)"></rect>
+  <rect width="1600" height="650" fill="url(#hatch)"></rect>
+  <rect x="1" y="1" width="1598" height="648" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"></rect>
+
+  
+  <g transform="translate(56,52)">
+    <rect x="0" y="0" width="232" height="42" rx="21" fill="none" stroke="#52C2E8" stroke-opacity="0.5" stroke-width="1.5"></rect>
+    <circle cx="26" cy="21" r="4.5" fill="#52C2E8"></circle>
+    <text x="44" y="28" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="16" letter-spacing="2.4" font-weight="600" fill="#52C2E8">ASSET CONCEITUAL</text>
+  </g>
+  
+  <text x="1544" y="80" text-anchor="end" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="2.2" font-weight="600" fill="#6B6B74">ANONIMIZADO · RECRIADO</text>
+
+  
+  <g transform="translate(800,250)" stroke="#52C2E8" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="-150" y="-58" width="64" height="64" rx="9"></rect><rect x="-70" y="-58" width="64" height="64" rx="9"></rect>
+  <rect x="10" y="-58" width="64" height="64" rx="9"></rect><rect x="90" y="-58" width="64" height="64" rx="9"></rect>
+  <line x1="-150" y1="44" x2="154" y2="44" stroke-width="3.6"></line>
+  <line x1="-150" y1="74" x2="90" y2="74" stroke="#6B6B74"></line>
+  <circle cx="-118" cy="-26" r="8" stroke="#52C2E8"></circle>
+</g>
+
+  
+  <text x="800" y="468" text-anchor="middle" font-family="&#39;Space Grotesk&#39;,system-ui,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F4F4F6">Design System como infraestrutura de produto</text>
+  
+  <text x="800" y="516" text-anchor="middle" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="21" font-weight="500" fill="#A2A2AC">Componentes legados evoluindo para padrões documentados</text>
+  
+  <text x="800" y="576" text-anchor="middle" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="16" letter-spacing="0.4" fill="#6B6B74">Imagem conceitual a ser inserida · não representa a interface real do produto</text>
+</svg>
