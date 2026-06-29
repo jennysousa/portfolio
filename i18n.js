@@ -201,7 +201,7 @@
     'sc.hero.kind':    'Case · Product Design Leadership · Payments platform',
     'sc.hero.title':   'Smart Checkout',
     'sc.hero.sub':     'How I led UX in a white-label payments platform with intelligent orchestration, multiple channels, methods, and configurable rules, organizing technical and business complexity into a clearer, more reliable, and scalable experience.',
-    'sc.hero.role.b':  'Product Design Manager · UX technical reference',
+    'sc.hero.role.b':  'Lead Product Designer · UX technical reference',
     'sc.hero.role.s':  'White-label payments platform, recurrence, and billing B2B2C.',
     'sc.hero.m1':      'Product Design Leadership',
     'sc.hero.m2':      'UX Strategy',
@@ -241,7 +241,7 @@
 
     'sc.s03.title':    'My role',
     'sc.s03.blk':      'My role as UX technical reference',
-    'sc.s03.p1':       'I served as Product Design Manager and UX technical reference for Smart Checkout, leading the experience evolution in a complex payments platform. My work combined designer management, technical direction, design review, pattern definition, accessibility, UX writing, prioritization, roadmap, data, and Celeste Design System governance.',
+    'sc.s03.p1':       'I served as Lead Product Designer and UX technical reference for Smart Checkout, leading the experience evolution in a complex payments platform. My work combined designer management, technical direction, design review, pattern definition, accessibility, UX writing, prioritization, roadmap, data, and Celeste Design System governance.',
     'sc.s03.p2':       'I did not act as the sole executor of solutions. I led, directed, reviewed, approved, and rejected design decisions, while also sketching initial paths and point solutions when needed. On Smart Checkout, I supported a senior designer and a junior designer. I also worked in partnership with visual design and content design to ensure consistency, clarity, and quality in the final experience.',
     'sc.s03.p3':       'Beyond Smart Checkout, my leadership also covered the designer responsible for the POS terminal experience, within the same payments umbrella, ensuring alignment of patterns, UX consistency, and integration with the Celeste Design System.',
 
@@ -448,12 +448,12 @@
     'ab.xp.bemobi':    'Bemobi',
     'ab.xp.bemobi.t':  '6 years and 8 months',
 
-    'ab.r1.title':     'Product Design Manager',
+    'ab.r1.title':     'Lead Product Designer',
     'ab.r1.time':      '4 years and 4 months',
     'ab.r1.tag':       'Leadership, DesignOps, and complex product',
     'ab.r1.desc':      'Leadership of designers in Product Design, Content Design/UX Writing, and Visual Design, working on Smart Checkout, digital payments, B2B/B2B2C products, white-label platforms, discovery, Product Analytics, Design System, and UX decisions in high technical and commercial complexity.',
 
-    'ab.r2.title':     'UX Lead / Product Design Specialist',
+    'ab.r2.title':     'Specialist Product Designer',
     'ab.r2.time':      '1 year and 5 months',
     'ab.r2.tag':       'Technical leadership, designer development, and quality',
     'ab.r2.desc':      'Hybrid role between technical depth and people leadership, conducting 1:1s, feedback, onboarding, development plans, frameworks, discovery facilitation, stakeholder alignment, and deliverable quality improvement.',
@@ -479,8 +479,8 @@
   /* ---- Page metadata (title + description) ---- */
   var meta = {
     'index.html': {
-      pt: { t: 'Jennifer Sousa \u00b7 Product Design Manager', d: 'Portf\u00f3lio de Jennifer Sousa, Product Design Manager. Estrat\u00e9gia, opera\u00e7\u00e3o e experi\u00eancia para escalar produtos digitais complexos.' },
-      en: { t: 'Jennifer Sousa \u00b7 Product Design Manager', d: 'Portfolio of Jennifer Sousa, Product Design Manager. Strategy, operations, and experience for scaling complex digital products.' }
+      pt: { t: 'Jennifer Sousa \u00b7 Lead Product Designer', d: 'Portf\u00f3lio de Jennifer Sousa, Lead Product Designer. Estrat\u00e9gia, opera\u00e7\u00e3o e experi\u00eancia para escalar produtos digitais complexos.' },
+      en: { t: 'Jennifer Sousa \u00b7 Lead Product Designer', d: 'Portfolio of Jennifer Sousa, Lead Product Designer. Strategy, operations, and experience for scaling complex digital products.' }
     },
     'Case DesignOps.html': {
       pt: { t: 'DesignOps & Lideran\u00e7a de Design \u00b7 Jennifer Sousa', d: 'Case de gest\u00e3o e lideran\u00e7a de design: como estruturei uma opera\u00e7\u00e3o de design para desenvolver designers, aumentar a maturidade de UX e fortalecer decis\u00f5es de produto.' },
