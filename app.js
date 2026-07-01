@@ -99,6 +99,41 @@
     window.scrollTo({ top: 0, behavior: animOff() ? "auto" : "smooth" });
   });
 
+  /* ---- Copy email to clipboard ---- */
+  var copyBtns = Array.prototype.slice.call(document.querySelectorAll("[data-copy]"));
+  copyBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var email = btn.getAttribute("data-copy");
+      var lang = "pt";
+      try { lang = localStorage.getItem("preferredLanguage") || "pt"; } catch (e) {}
+      var doneText = lang === "en" ? "Copied!" : "Copiado!";
+      function feedback() {
+        var status = btn.querySelector(".clink__status");
+        if (status) status.textContent = doneText;
+        btn.classList.add("is-copied");
+        window.clearTimeout(btn._copyTimer);
+        btn._copyTimer = window.setTimeout(function () {
+          btn.classList.remove("is-copied");
+          if (status) status.textContent = "";
+        }, 2000);
+      }
+      function fallback() {
+        try {
+          var ta = document.createElement("textarea");
+          ta.value = email; ta.setAttribute("readonly", "");
+          ta.style.position = "absolute"; ta.style.left = "-9999px";
+          document.body.appendChild(ta); ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+        } catch (e) {}
+        feedback();
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(feedback, fallback);
+      } else { fallback(); }
+    });
+  });
+
   /* ---- Lightbox / slideshow ---- */
   var lb = document.getElementById("lightbox");
   var triggers = Array.prototype.slice.call(document.querySelectorAll("[data-lightbox]"));

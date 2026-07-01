@@ -165,7 +165,7 @@ p { color: var(--muted); margin: 0; font-size: inherit; line-height: inherit; le
 .hero__title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(40px, 7.2vw, 92px);
+  font-size: clamp(40px, 7.2vw, 80px);
   line-height: 0.98;
   letter-spacing: -0.035em;
   margin: 0;
@@ -326,7 +326,7 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 .case__main { min-width: 0; }
 .case__name {
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(28px,4.6vw,62px); line-height: 1.0; letter-spacing: -0.035em;
+  font-size: clamp(28px,4.6vw,48px); line-height: 1.0; letter-spacing: -0.035em;
   margin: 0 0 16px; color: var(--ink); transition: color .3s ease;
 }
 .case:hover .case__name { color: var(--accent); }
@@ -353,7 +353,7 @@ a.case .case__cta .soon { border-color: var(--link); color: var(--link); }
 
 /* ---------- Contato ---------- */
 .contact { text-align: center; padding-block: clamp(96px,16vh,200px); }
-.contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(44px,8vw,108px); line-height: 0.94; letter-spacing: -0.045em; margin: 0; color: var(--ink); }
+.contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(44px,8vw,88px); line-height: 0.94; letter-spacing: -0.045em; margin: 0; color: var(--ink); }
 .contact__title em { font-style: normal; color: var(--accent); }
 .contact__sub { font-size: clamp(17px,1.5vw,22px); color: var(--muted); margin: 28px auto 0; max-width: 46ch; line-height: 1.55; }
 .contact__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 18px; margin-top: 52px; }
@@ -377,6 +377,55 @@ a.case .case__cta .soon { border-color: var(--link); color: var(--link); }
 .footer a:hover { color: var(--accent); }
 .footer__top { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; color: var(--muted-2); font: inherit; }
 .footer__top:hover { color: var(--accent); }
+.footer__info { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.footer__a11y { display: inline-flex; align-items: center; gap: 7px; color: var(--muted-2); font-size: 13px; }
+.footer__a11y::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+/* ---------- A11y utility ---------- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Availability badge ---------- */
+.avail-badge {
+  display: inline-flex; align-items: center; gap: 10px; align-self: flex-start;
+  width: fit-content;
+  border: 1px solid color-mix(in srgb, #3fca7a 42%, transparent);
+  background: color-mix(in srgb, #3fca7a 11%, transparent);
+  border-radius: 999px; padding: 8px 16px;
+  font-family: var(--font-ui); font-size: 13.5px; font-weight: 600;
+  color: var(--ink); margin: 32px 0 32px;
+}
+.avail-badge__dot {
+  flex: none; width: 9px; height: 9px; border-radius: 50%; background: #3fca7a;
+  box-shadow: 0 0 0 0 color-mix(in srgb, #3fca7a 65%, transparent);
+  animation: availPulse 2.2s ease-out infinite;
+}
+@keyframes availPulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, #3fca7a 60%, transparent); }
+  70%  { box-shadow: 0 0 0 9px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* ---------- Case tags ---------- */
+.case__tags {
+  margin: 18px 0 0; padding: 0;
+  font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .03em;
+  line-height: 1.75; color: var(--muted-2);
+}
+
+/* ---------- Copy-email button + external-link icon ---------- */
+button.clink { background: none; font: inherit; cursor: pointer; text-align: left; }
+.clink--copy .clink__status {
+  display: none; align-items: center; gap: 6px;
+  color: #3fca7a; font-weight: 700; font-size: .92em; white-space: nowrap;
+}
+.clink--copy .clink__status::before { content: "\2713"; font-size: 1em; }
+.clink--copy.is-copied .clink__status { display: inline-flex; }
+.clink--copy.is-copied .clink__body { opacity: .45; }
+.ext-icon { flex: none; margin-left: 2px; opacity: .65; transition: opacity .3s ease; }
+.clink:hover .ext-icon, .clink:focus-visible .ext-icon { opacity: 1; }
 
 /* ============================================================
    Scroll-reveal animation
