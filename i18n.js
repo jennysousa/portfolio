@@ -39,7 +39,7 @@
 
     /* ========== HOME (index.html) ========== */
     'h.hero.title':   'I build <em>design at scale</em> for complex digital products.',
-    'h.hero.desc':    'I work at the intersection of specialist UX, design leadership and product strategy, building solutions that reduce friction, increase conversion and work across any integration context.',
+    'h.hero.desc':    'I combine deep UX expertise, product thinking, and design leadership to build solutions that reduce friction and increase conversion.',
     'h.hero.meta1':   '12+ years in design',
     'h.hero.meta2':   '6+ years in B2B2C',
     'h.hero.meta3':   'Leadership · Generative AI · UX Strategy',
@@ -56,7 +56,7 @@
     'h.hl3.title':    'DesignOps and governance',
     'h.hl3.desc':     'Structuring processes, documentation, design reviews, demand management, alignment facilitation, and quality criteria to bring clarity to the design operation.',
     'h.hl4.title':    'Design System, delivery, and consistency',
-    'h.hl4.desc':     'Checkout UX, payment journeys, information architecture, flows, prototypes, handoff, interface standards, usability, accessibility and collaboration with product and engineering.',
+    'h.hl4.desc':     'Design tokens, componentization, living documentation in Storybook, interface standards, handoff, usability, accessibility, and collaboration with product and engineering.',
 
     'h.num.eyebrow':  'Applied experience',
     'h.num.title':    'Complex products, scale, and <em>cross-functional collaboration</em>.',
@@ -66,7 +66,7 @@
     'h.stat2.label':  'in digital products',
     'h.stat3.unit':   'designers',
     'h.stat3.label':  'developed throughout my career',
-    'h.ctx1':         'I built deep UX expertise working on digital payments, checkout and B2B2C white-label platforms. Throughout my career, I also worked on digital engagement platforms for offers and services, health apps, e-commerce and telecom. My background combines product specialization with people leadership, process improvement and close collaboration with product, engineering and business.',
+    'h.ctx1':         'I built deep UX expertise working with digital payments, checkout, and B2B2C white-label platforms. That foundation was shaped by earlier experience in e-commerce, a delivery app, and education, which gave me the range to handle products with high regulatory and operational complexity.',
     'h.ctx2':         'My background combines people leadership, hands-on Product Design, process improvement, and close collaboration with product, engineering, business, and partner teams.',
 
     'h.cases.eyebrow':'Featured cases',
@@ -82,8 +82,8 @@
     'h.c2.tags':      'Design culture · Leadership · Generative AI · Product strategy · Technical mentorship',
     'h.c2.cta':       'View case',
     'h.c3.kind':      'B2B/B2B2C Platform',
-    'h.c3.name':      'From manual configuration to scalable platform: the evolution of Loop for offer and service orchestration in Brazil/LATAM',
-    'h.c3.desc':      'The development from manual campaign configuration into a scalable platform to personalize digital experiences across multiple telecom channels.',
+    'h.c3.name':      'From manual configuration to a scalable platform powered by AI/ML',
+    'h.c3.desc':      'The evolution of Loop, an offer and service orchestration platform for mobile carriers, expanding operations across Brazil and LATAM.',
     'h.c3.tags':      'AI/ML · Design System · SaaS · Telecom · Next Best Action',
     'h.c3.cta':       'View case',
     'h.c4.kind':      'B2C Product and B2B Platform',
@@ -94,7 +94,7 @@
 
     'h.contact.eyebrow': 'Contact',
     'h.contact.title':   'Let\u2019s <em>talk?</em>',
-    'h.contact.sub':     'If you\u2019d like to talk about digital payments, specialist UX or design leadership, just reach out.',
+    'h.contact.sub':     'If you need someone who bridges strategic vision and UX execution, I\u2019m here.',
 
     /* ========== CASE DESIGNOPS ========== */
     'do.hero.kind':    'Case · Management · DesignOps',
@@ -464,11 +464,11 @@
     'ab.xp.bemobi.t':  '6 years and 8 months',
 
     'ab.r1.title':     'Lead Product Designer',
-    'ab.r1.time':      '4 years and 4 months',
+    'ab.r1.time':      '2 years and 11 months',
     'ab.r1.tag':       'Leadership, DesignOps, and complex product',
     'ab.r1.desc':      'Leadership of designers in Product Design, Content Design/UX Writing, and Visual Design, working on Smart Checkout, digital payments, B2B/B2B2C products, white-label platforms, discovery, Product Analytics, Design System, and UX decisions in high technical and commercial complexity.',
 
-    'ab.r2.title':     'Specialist Product Designer',
+    'ab.r2.title':     'Specialist Product Design - UX Lead',
     'ab.r2.time':      '1 year and 5 months',
     'ab.r2.tag':       'Technical leadership, designer development, and quality',
     'ab.r2.desc':      'Hybrid role between technical depth and people leadership, conducting 1:1s, feedback, onboarding, development plans, frameworks, discovery facilitation, stakeholder alignment, and deliverable quality improvement.',
