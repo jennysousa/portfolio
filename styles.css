@@ -159,9 +159,48 @@ p { color: var(--muted); margin: 0; font-size: inherit; line-height: inherit; le
   padding-top: 120px; padding-bottom: var(--section-y);
   position: relative;
 }
-.hero__inner { display: flex; flex-direction: column; }
-.hero__eyebrow { color: var(--muted); }
+.hero__inner {
+  display: grid; grid-template-columns: 1fr;
+  grid-template-areas: "eyebrow" "carousel" "title" "desc" "badge" "meta";
+}
+.hero__eyebrow { grid-area: eyebrow; color: var(--muted); }
 .hero__eyebrow::before { background: var(--muted); opacity: .5; }
+.hero__carousel { grid-area: carousel; margin: 28px 0 8px; display: flex; flex-direction: column; }
+.hero__title { grid-area: title; }
+.hero__desc { grid-area: desc; }
+.avail-badge { grid-area: badge; }
+.hero__meta { grid-area: meta; }
+
+/* --- hero carousel --- */
+.hero__carousel-track {
+  position: relative; width: 100%; aspect-ratio: 846 / 1500;
+  max-width: 420px; flex: 1; min-height: 0;
+}
+.hero__slide {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: contain; opacity: 0; transition: opacity .6s ease;
+}
+.hero__slide.is-active { opacity: 1; }
+.hero__dots {
+  display: flex; gap: 8px; margin-top: 16px;
+}
+.hero__dot {
+  appearance: none; border: none; background: none; padding: 0; cursor: pointer;
+  width: 32px; height: 4px; border-radius: 999px; background: var(--hairline-2, rgba(0,0,0,.12));
+  overflow: hidden; position: relative;
+}
+.hero__dot-fill {
+  position: absolute; inset: 0; width: 0%; background: var(--accent); border-radius: inherit;
+}
+.hero__dot.is-active .hero__dot-fill { animation: heroDotFill 5s linear forwards; }
+.hero__dot.is-done .hero__dot-fill { width: 100%; }
+@keyframes heroDotFill { from { width: 0%; } to { width: 100%; } }
+html[data-anim="off"] .hero__dot.is-active .hero__dot-fill,
+html[data-anim="off"] .hero__slide { animation: none; transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .hero__dot.is-active .hero__dot-fill { animation: none; width: 100%; }
+  .hero__slide { transition: none; }
+}
 .hero__title {
   font-family: var(--font-display);
   font-weight: 700;
@@ -215,6 +254,23 @@ html[data-hero="centro"] .hero__cue { left: 50%; transform: translateX(-50%); }
   html[data-hero="split"] .hero__title { max-width: none; }
   html[data-hero="split"] .hero__desc { margin-top: 0; padding-bottom: 10px; }
   html[data-hero="split"] .hero__meta { grid-column: 1 / -1; }
+}
+
+/* --- hero carousel: side-by-side on desktop, 40% width --- */
+@media (min-width: 920px) {
+  .hero__inner {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 56px;
+    grid-template-areas:
+      "eyebrow carousel"
+      "title carousel"
+      "desc carousel"
+      "badge carousel"
+      "meta carousel";
+    align-items: stretch;
+  }
+  .hero__carousel { margin: 0; align-self: stretch; width: 100%; height: 100%; }
+  .hero__carousel-track { max-width: none; width: 100%; height: 100%; aspect-ratio: auto; }
 }
 
 /* --- variant: mega --- */
@@ -318,10 +374,16 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 /* ---------- Cases ---------- */
 .cases { border-top: 1px solid var(--hairline); }
 .case {
-  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: clamp(20px,4vw,56px);
+  display: grid; grid-template-columns: 340px 1fr auto; align-items: center; gap: clamp(20px,4vw,56px);
   padding: clamp(34px,5vh,60px) 0; border-bottom: 1px solid var(--hairline);
   position: relative; cursor: default; transition: padding-left .45s cubic-bezier(.2,.7,.2,1);
 }
+.case__thumb {
+  width: 340px; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden;
+  background: var(--surface-2, #f2f2f0);
+}
+.case__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.case:hover .case__thumb img { transform: scale(1.08); }
 .case__idx { font-family: var(--font-mono); font-size: 14px; color: var(--accent); align-self: start; padding-top: 10px; }
 .case__main { min-width: 0; }
 .case__name {
@@ -349,6 +411,7 @@ a.case .case__cta .soon { border-color: var(--link); color: var(--link); }
 @media (max-width: 760px) {
   .case { grid-template-columns: 1fr; gap: 14px; }
   .case__idx, .case__cta { padding-top: 0; }
+  .case__thumb { width: 100%; order: -1; }
 }
 
 /* ---------- Contato ---------- */

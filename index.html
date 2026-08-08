@@ -64,7 +64,19 @@
 <header class="hero" id="top">
   <div class="container hero__inner">
     <p class="eyebrow hero__eyebrow reveal">🏳️‍🌈 Jennifer Sousa · Lead Product Designer</p>
-    <h1 class="hero__title reveal" data-d="1" data-i18n="h.hero.title">Estruturo <em>design em escala</em> para produtos digitais complexos.</h1>
+    <div class="hero__carousel reveal" data-d="1" data-hero-carousel aria-roledescription="carrossel" data-i18n-aria-label="h.hero.carousel.label" aria-label="Trabalhos em destaque">
+      <div class="hero__carousel-track">
+        <img class="hero__slide is-active" src="assets/hero-carousel/slide-1.png" alt="" />
+        <img class="hero__slide" src="assets/hero-carousel/slide-2.png" alt="" />
+        <img class="hero__slide" src="assets/hero-carousel/slide-3.png" alt="" />
+      </div>
+      <div class="hero__dots" role="tablist" data-i18n-aria-label="h.hero.carousel.dots" aria-label="Selecionar imagem">
+        <button class="hero__dot is-active" type="button" role="tab" aria-selected="true" data-i18n-aria-label="h.hero.carousel.dot1" aria-label="Imagem 1"><span class="hero__dot-fill"></span></button>
+        <button class="hero__dot" type="button" role="tab" aria-selected="false" data-i18n-aria-label="h.hero.carousel.dot2" aria-label="Imagem 2"><span class="hero__dot-fill"></span></button>
+        <button class="hero__dot" type="button" role="tab" aria-selected="false" data-i18n-aria-label="h.hero.carousel.dot3" aria-label="Imagem 3"><span class="hero__dot-fill"></span></button>
+      </div>
+    </div>
+    <h1 class="hero__title reveal" data-d="1" data-i18n="h.hero.title" style="font-size: 72px">Estruturo <em>design em escala</em> para produtos digitais complexos.</h1>
     <p class="hero__desc reveal" data-d="2" data-i18n="h.hero.desc">Combino profundidade técnica em UX, visão de produto e liderança de design para construir soluções que reduzem fricção e aumentam conversão.</p>
     <div class="avail-badge reveal" data-d="2">
       <span class="avail-badge__dot" aria-hidden="true"></span>
@@ -146,7 +158,7 @@
     <div class="cases">
       <!-- Para ativar o link: troque a <div class="case"> por <a class="case" href="URL"> e a </div> por </a> -->
       <a class="case reveal" data-d="1" href="Case Smart Checkout.html">
-        <span class="case__idx">01</span>
+        <div class="case__thumb"><img src="assets/case-smart-checkout/thumb-home.png" alt="" loading="lazy" /></div>
         <div class="case__main">
           <span class="case__kind" data-i18n="h.c1.kind">Plataforma Smart Checkout</span>
           <h3 class="case__name" data-i18n="h.c1.name">Construindo do zero um checkout que escala para qualquer indústria</h3>
@@ -158,7 +170,7 @@
         </span>
       </a>
       <a class="case reveal" data-d="1" href="Case DesignOps.html">
-        <span class="case__idx">02</span>
+        <div class="case__thumb"><img src="assets/case-designops/fluxos-colaboracao.png" alt="" loading="lazy" /></div>
         <div class="case__main">
           <span class="case__kind" data-i18n="h.c2.kind">Liderança e DesignOps na Bemobi</span>
           <h3 class="case__name" data-i18n="h.c2.name">De designers isolados a um time com cultura, critério e autonomia.</h3>
@@ -170,7 +182,7 @@
         </span>
       </a>
       <a class="case reveal" data-d="1" href="Case Loop.html">
-        <span class="case__idx">03</span>
+        <div class="case__thumb"><img src="assets/case-loop/thumb-home.png" alt="" loading="lazy" /></div>
         <div class="case__main">
           <span class="case__kind" data-i18n="h.c3.kind">Plataforma B2B/B2B2C</span>
           <h3 class="case__name" data-i18n="h.c3.name">De configuração manual a plataforma escalável com IA/ML</h3>
@@ -182,7 +194,7 @@
         </span>
       </a>
       <div class="case reveal" data-d="1">
-        <span class="case__idx">04</span>
+        <div class="case__thumb"><img src="assets/case-loop/thumb-achei.png" alt="" loading="lazy" /></div>
         <div class="case__main">
           <span class="case__kind" data-i18n="h.c4.kind">Produto B2C e plataforma B2B</span>
           <h3 class="case__name" data-i18n="h.c4.name">Como tiramos do papel uma solução para farmácias locais que foi vencedora de um desafio da Camila Farani</h3>
