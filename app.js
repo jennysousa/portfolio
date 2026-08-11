@@ -82,9 +82,12 @@
       progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
     }
     var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (hero && !animOff() && !reducedMotion && y < window.innerHeight) {
+    if (hero && !animOff() && !reducedMotion && window.innerWidth >= 920 && y < window.innerHeight) {
       hero.style.transform = "translateY(" + (y * 0.14) + "px)";
       hero.style.opacity = String(Math.max(0, 1 - (y / window.innerHeight) * 1.1));
+    } else if (hero && (hero.style.opacity || hero.style.transform)) {
+      hero.style.transform = "";
+      hero.style.opacity = "";
     }
     ticking = false;
   }
