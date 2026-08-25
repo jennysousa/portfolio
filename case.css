@@ -279,6 +279,10 @@ img.about-photo--filled {
 .about-prose .about__body p + p { margin-top: clamp(22px, 2.4vw, 38px); }
 .about-prose .about__body strong { color: var(--ink); font-weight: 600; }
 
+/* ---------- Sobre mim (home section) ---------- */
+#sobre .about-page { margin-bottom: clamp(56px, 8vh, 96px); }
+#sobre .sobre__xp-head { border-top: 1px solid var(--hairline-2); padding-top: clamp(32px, 5vh, 56px); }
+
 /* ---------- Experience timeline ---------- */
 .xp { display: flex; flex-direction: column; gap: clamp(44px, 6vh, 72px); }
 .xp-co__head {
