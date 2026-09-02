@@ -32,7 +32,7 @@
 </g>
 
   
-  <text x="800" y="468" text-anchor="middle" font-family="&#39;Space Grotesk&#39;,system-ui,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F4F4F6">Design System como infraestrutura de produto</text>
+  <text x="800" y="468" text-anchor="middle" font-family="'Space Grotesk',system-ui,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F4F4F6">Design System como infraestrutura de produto</text>
   
   <text x="800" y="516" text-anchor="middle" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="21" font-weight="500" fill="#A2A2AC">Componentes legados evoluindo para padrões documentados</text>
   

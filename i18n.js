@@ -508,10 +508,6 @@
     'Case Loop.html': {
       pt: { t: 'Loop \u00b7 Digital Engagement Platform \u00b7 Jennifer Sousa', d: 'Case de Product Design: como transformamos uma opera\u00e7\u00e3o manual de ofertas em uma plataforma de orquestra\u00e7\u00e3o digital, com Design System, IA/ML e Next Best Action em telecom.' },
       en: { t: 'Loop \u00b7 Digital Engagement Platform \u00b7 Jennifer Sousa', d: 'Product Design case: how we turned a manual offer operation into a digital orchestration platform, with Design System, AI/ML, and Next Best Action in telecom.' }
-    },
-    'Sobre mim.html': {
-      pt: { t: 'Sobre mim \u00b7 Jennifer Sousa', d: 'Sobre Jennifer Sousa, l\u00edder de Product Design que atua na interse\u00e7\u00e3o entre pessoas, processos e produtos.' },
-      en: { t: 'About me \u00b7 Jennifer Sousa', d: 'About Jennifer Sousa, a Product Design leader who works at the intersection of people, processes, and products.' }
     }
   };
 

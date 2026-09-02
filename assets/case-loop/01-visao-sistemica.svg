@@ -25,7 +25,7 @@
   
   <g transform="translate(800,250)" stroke="#52C2E8" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
   <circle cx="0" cy="0" r="34" stroke-width="3.6"></circle>
-  <text x="0" y="6" text-anchor="middle" font-family="&#39;Space Grotesk&#39;,system-ui,sans-serif" font-size="17" font-weight="700" fill="#52C2E8" stroke="none">Loop</text>
+  <text x="0" y="6" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="17" font-weight="700" fill="#52C2E8" stroke="none">Loop</text>
   <line x1="-34" y1="0" x2="-150" y2="-46"></line><circle cx="-176" cy="-56" r="15"></circle>
   <line x1="-34" y1="0" x2="-150" y2="46"></line><circle cx="-176" cy="56" r="15"></circle>
   <line x1="34" y1="0" x2="150" y2="-46"></line><circle cx="176" cy="-56" r="15"></circle>
@@ -34,7 +34,7 @@
 </g>
 
   
-  <text x="800" y="468" text-anchor="middle" font-family="&#39;Space Grotesk&#39;,system-ui,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F4F4F6">Visão sistêmica do Loop</text>
+  <text x="800" y="468" text-anchor="middle" font-family="'Space Grotesk',system-ui,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="-1" fill="#F4F4F6">Visão sistêmica do Loop</text>
   
   <text x="800" y="516" text-anchor="middle" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="21" font-weight="500" fill="#A2A2AC">Loop como camada de orquestração entre operadoras, canais, dados e IA/ML</text>
   
