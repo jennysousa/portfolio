@@ -89,20 +89,20 @@
   --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", monospace;
 
   /* ----- Type scale (from brandbook: H1 96 / H2 72 / H3 56 / H4 32 / body 24 / caption 20) ----- */
-  --fs-h1: 96px;
-  --fs-h2: 72px;
-  --fs-h3: 56px;
-  --fs-h4: 32px;
-  --fs-body: 24px;
-  --fs-caption: 20px;
+  --fs-h1: 5rem;
+  --fs-h2: 3.5rem;
+  --fs-h3: 3rem;
+  --fs-h4: 1.5rem;
+  --fs-body: 1rem;
+  --fs-caption: 1rem;
 
   /* UI type scale (product surfaces — Google Sans) */
-  --fs-ui-1: 12px;
-  --fs-ui-2: 14px;
-  --fs-ui-3: 16px;
-  --fs-ui-4: 18px;
-  --fs-ui-5: 20px;
-  --fs-ui-6: 24px;
+  --fs-ui-1: 0.625rem;
+  --fs-ui-2: 0.75rem;
+  --fs-ui-3: 0.75rem;
+  --fs-ui-4: 0.875rem;
+  --fs-ui-5: 1rem;
+  --fs-ui-6: 1rem;
 
   /* Tracking */
   --ls-tight:  -0.03em;   /* display */
@@ -134,7 +134,7 @@ hr { border: none; border-top: 1px solid var(--border-hairline); }
 /* Bemobi eyebrow pattern: small label + big headline stacked */
 .bmb-eyebrow {
   font-family: var(--font-ui);
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--fg-2);
   line-height: 1.2;
