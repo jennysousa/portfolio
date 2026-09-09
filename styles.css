@@ -204,7 +204,7 @@ html[data-anim="off"] .hero__slide { animation: none; transition: none; }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2rem, 5.76vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 0.98;
   letter-spacing: -0.035em;
   margin: 0;
@@ -294,33 +294,44 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 .section__head { max-width: 60ch; margin-bottom: clamp(48px, 7vh, 88px); }
 .section__title {
   font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(1.5rem, 3.52vw, 3rem); line-height: 1.04; letter-spacing: -0.03em;
+  font-size: clamp(1.375rem, 2.8vw, 2.25rem); line-height: 1.04; letter-spacing: -0.03em;
   margin: 0; color: var(--ink); text-wrap: balance;
 }
 .section__title em { font-style: normal; color: var(--accent); }
 .section__lead { font-size: clamp(0.875rem, 1.12vw, 1.125rem); color: var(--muted); margin: 24px 0 0; max-width: 54ch; line-height: 1.55; }
 
-/* ---------- Highlights (4 cards) ---------- */
-.highlights {
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 1px; background: var(--hairline-2);
-  border: 1px solid var(--hairline-2); border-radius: 18px; overflow: hidden;
+/* ---------- Minha missão ---------- */
+.missao { display: block; }
+.missao__col { display: flex; flex-direction: column; gap: clamp(20px, 3vw, 32px); }
+.missao__row { display: grid; grid-template-columns: 1fr auto; gap: clamp(24px, 4vw, 48px); align-items: start; }
+.missao__body--spaced { margin-top: 20px; }
+.missao__photo { align-self: start; }
+@media (max-width: 760px) { .missao__row { grid-template-columns: 1fr; } .missao__photo { order: -1; } }
+.missao__text .eyebrow { margin-bottom: 18px; }
+.missao__body { font-size: clamp(1.125rem, 1.6vw, 1.375rem); line-height: 1.6; color: var(--ink); margin: 0; max-width: 46ch; }
+.missao__pills { display: flex; flex-wrap: wrap; gap: 14px; align-content: flex-start; }
+.xp--spaced { margin-top: clamp(32px, 5vw, 56px); }
+.missao__pills--row { flex-wrap: nowrap; overflow-x: auto; }
+@media (max-width: 760px) { .missao__pills--row { flex-wrap: wrap; overflow-x: visible; } }
+.pill {
+  display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 999px;
+  border: 1px solid var(--accent); color: var(--accent); font-size: 0.875rem; font-weight: 500;
+  animation: pill-glow 16s ease-in-out infinite;
 }
-.hl {
-  background: var(--bg); padding: clamp(28px, 3.5vw, 52px);
-  display: flex; flex-direction: column; gap: 16px;
-  position: relative; transition: background .4s ease;
+.pill:nth-child(1) { animation-delay: 0s; }
+.pill:nth-child(2) { animation-delay: 2s; }
+.pill:nth-child(3) { animation-delay: 4s; }
+.pill:nth-child(4) { animation-delay: 6s; }
+.pill:nth-child(5) { animation-delay: 8s; }
+.pill:nth-child(6) { animation-delay: 10s; }
+.pill:nth-child(7) { animation-delay: 12s; }
+.pill:nth-child(8) { animation-delay: 14s; }
+@keyframes pill-glow {
+  0%, 100% { border-color: var(--accent); color: var(--accent); box-shadow: none; }
+  3% { border-color: #FFFFFF; color: #FFFFFF; box-shadow: 0 0 12px rgba(255,255,255,.5); }
+  9% { border-color: var(--accent); color: var(--accent); box-shadow: none; }
 }
-.hl::before {
-  content: ""; position: absolute; left: 0; top: 0; height: 2px; width: 0;
-  background: var(--accent); transition: width .45s cubic-bezier(.2,.7,.2,1);
-}
-.hl:hover { background: var(--panel); }
-.hl:hover::before { width: 100%; }
-.hl__num { font-family: var(--font-mono); font-size: 0.625rem; color: var(--accent); letter-spacing: .1em; }
-.hl__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1rem, 1.6vw, 1.5rem); letter-spacing: -0.02em; margin: 0; color: var(--ink); }
-.hl__desc { font-size: 0.75rem; line-height: 1.6; color: var(--muted); margin: 0; }
-@media (max-width: 760px) { .highlights { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .pill { animation: none; } }
 
 /* ---------- Sobre ---------- */
 .about__quote {
@@ -332,7 +343,7 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 .about__body { font-size: clamp(0.875rem, 1.12vw, 1rem); line-height: 1.65; color: var(--muted); max-width: 60ch; }
 .about__body strong { color: var(--ink); font-weight: 600; }
 /* widow control on running text */
-.hl__desc, .do__desc, .case__desc, .about__body p, .hero__desc,
+.missao__body, .do__desc, .case__desc, .about__body p, .hero__desc,
 .stat__label, .ctx, .contact__sub, .section__lead, .contexts__intro { text-wrap: pretty; }
 .about__body p + p { margin-top: clamp(22px, 2.4vw, 38px); }
 @media (min-width: 900px) {
@@ -366,7 +377,7 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 
 /* ---------- Números ---------- */
 .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(24px,5vw,56px); margin-bottom: clamp(40px,6vh,72px); }
-.stat__fig { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.5rem, 5.6vw, 5rem); line-height: 0.9; letter-spacing: -0.05em; color: var(--ink); }
+.stat__fig { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 0.9; letter-spacing: -0.05em; color: var(--ink); }
 .stat__fig span { color: var(--accent); }
 .stat__label { font-size: clamp(0.75rem, 1.04vw, 1rem); color: var(--muted); margin-top: 14px; max-width: 26ch; line-height: 1.5; }
 .contexts { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px 32px; border-top: 1px solid var(--hairline); padding-top: 36px; }
@@ -392,7 +403,7 @@ html[data-hero="mega"] .hero__desc { max-width: 50ch; }
 .case__main { min-width: 0; }
 .case__name {
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(1.5rem, 3.68vw, 2.5rem); line-height: 1.0; letter-spacing: -0.035em;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem); line-height: 1.0; letter-spacing: -0.035em;
   margin: 0 0 16px; color: var(--ink); transition: color .3s ease;
 }
 .case:hover .case__name { color: var(--accent); }
@@ -420,7 +431,7 @@ a.case .case__cta .soon { border-color: var(--link); color: var(--link); }
 
 /* ---------- Contato ---------- */
 .contact { text-align: center; padding-block: clamp(96px,16vh,200px); }
-.contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 6.4vw, 4.5rem); line-height: 0.94; letter-spacing: -0.045em; margin: 0; color: var(--ink); }
+.contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 5.6vw, 3.25rem); line-height: 0.94; letter-spacing: -0.045em; margin: 0; color: var(--ink); }
 .contact__title em { font-style: normal; color: var(--accent); }
 .contact__sub { font-size: clamp(0.875rem, 1.2vw, 1.125rem); color: var(--muted); margin: 28px auto 0; max-width: 46ch; line-height: 1.55; }
 .contact__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 18px; margin-top: 52px; }

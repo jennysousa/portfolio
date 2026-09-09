@@ -16,10 +16,10 @@
     's.skip':            'Skip to main content',
     's.nav.aria':        'Main navigation',
     's.nav.home':        'Home',
-    's.nav.scope':       'Scope',
-    's.nav.experience':  'Experience',
+    's.nav.scope':       'About me',
+    's.nav.experience':  'My career',
     's.nav.cases':       'Cases',
-    's.nav.about':       'About me',
+    's.nav.about':       'Professional experience',
     's.nav.cta':         "Let\u2019s talk?",
     's.footer.copy':     '© 2026 Jennifer Sousa · Designed and developed with AI as copilot',
     's.footer.top':      'Back to top',
@@ -42,31 +42,24 @@
     'h.hero.desc':    'I combine deep UX expertise, product thinking, and design leadership to build solutions that reduce friction and increase conversion.',
     'h.hero.meta1':   '12+ years in design',
     'h.hero.meta2':   '6+ years in B2B2C',
-    'h.hero.meta3':   'Leadership · Generative AI · UX Strategy',
+    'h.hero.meta3':   'UX Strategy · Generative AI · Leadership',
     'h.hero.cue':     'Scroll to explore',
 
     'h.hero.badge':   'Open to new opportunities',
 
-    'h.hl.eyebrow':   'What I do',
-    'h.hl.title':     'Where my work <em>creates the most value</em>.',
-    'h.hl1.title':    'Leadership, growth, and UX culture',
-    'h.hl1.desc':     'Designer development, coaching rituals, feedback, onboarding, competency frameworks, and building a culture of continuous learning.',
-    'h.hl2.title':    'UX Strategy, discovery, and evidence',
-    'h.hl2.desc':     'Defining experience vision, user journeys, research, usability testing, data analysis, benchmarks, and learnings to support product decisions.',
-    'h.hl3.title':    'DesignOps and governance',
-    'h.hl3.desc':     'Structuring processes, documentation, design reviews, demand management, alignment facilitation, and quality criteria to bring clarity to the design operation.',
-    'h.hl4.title':    'Design System, delivery, and consistency',
-    'h.hl4.desc':     'Design tokens, componentization, living documentation in Storybook, interface standards, handoff, usability, accessibility, and collaboration with product and engineering.',
+    'h.missao.eyebrow': 'My mission',
+    'h.missao.p':       'My name is Jenny, I\u2019ve worked in design since 2011, and over the last 10 years I\u2019ve specialized in building solutions for digital products. Along the way I also learned that good design is built together, which is why I invest as much in craft as in helping people and teams grow alongside me.',
+    'h.missao.p2':      'I like turning ambiguous contexts into clearer processes, more consistent experiences, and better-informed product decisions.',
 
-    'h.num.eyebrow':  'Applied experience',
+    'h.num.eyebrow':  'My career',
     'h.num.title':    'Complex products, scale, and <em>cross-functional collaboration</em>.',
+    'h.num.closing':  'I built deep UX expertise working on digital payments, checkout, and B2B2C white-label platforms. That foundation was shaped by earlier experience in e-commerce, delivery apps, and education, which gave me the range to handle products with high regulatory and operational complexity.',
     'h.stat1.unit':   'years',
     'h.stat1.label':  'working in design',
     'h.stat2.unit':   'years',
     'h.stat2.label':  'in digital products',
     'h.stat3.unit':   'designers',
     'h.stat3.label':  'developed throughout my career',
-    'h.ctx1':         'I built deep UX expertise working with digital payments, checkout, and B2B2C white-label platforms. That foundation was shaped by earlier experience in e-commerce, a delivery app, and education, which gave me the range to handle products with high regulatory and operational complexity.',
     'h.ctx2':         'My background combines people leadership, hands-on Product Design, process improvement, and close collaboration with product, engineering, business, and partner teams.',
 
     'h.cases.eyebrow':'Featured cases',
@@ -456,9 +449,10 @@
     /* ========== SOBRE MIM (About) ========== */
     'ab.hero.kind':    'About me',
     'ab.hero.title':   'I work at the intersection of <em>people, processes, and products</em>.',
-    'ab.about.p1':     'I\u2019m a Product Design leader with experience that combines <strong>designer management</strong>, <strong>UX strategy</strong>, <strong>DesignOps</strong>, discovery, metrics, Design System, and the evolution of complex digital products.',
+    'ab.about.p1':     'I\u2019m a Product Designer with experience spanning design team management, UX strategy, DesignOps, discovery, metrics, Design Systems, and the evolution of complex digital products.',
     'ab.about.p2':     'I like turning ambiguous contexts into clearer processes, more consistent experiences, and better-informed product decisions.',
 
+    'ab.exp.eyebrow':  'Professional experience',
     'ab.xp.title':     'Professional experience',
     'ab.xp.bemobi':    'Bemobi',
     'ab.xp.bemobi.t':  '6 years and 8 months',
@@ -494,8 +488,8 @@
   /* ---- Page metadata (title + description) ---- */
   var meta = {
     'index.html': {
-      pt: { t: 'Jennifer Sousa \u00b7 Lead Product Designer', d: 'Portf\u00f3lio de Jennifer Sousa, Lead Product Designer. Estrat\u00e9gia, opera\u00e7\u00e3o e experi\u00eancia para escalar produtos digitais complexos.' },
-      en: { t: 'Jennifer Sousa \u00b7 Lead Product Designer', d: 'Portfolio of Jennifer Sousa, Lead Product Designer. Strategy, operations, and experience for scaling complex digital products.' }
+      pt: { t: 'Jennifer Sousa \u00b7 Product Designer \u00b7 Payments & UX Strategy', d: 'Portf\u00f3lio de Jennifer Sousa, Lead Product Designer. Estrat\u00e9gia, opera\u00e7\u00e3o e experi\u00eancia para escalar produtos digitais complexos.' },
+      en: { t: 'Jennifer Sousa \u00b7 Product Designer \u00b7 Payments & UX Strategy', d: 'Portfolio of Jennifer Sousa, Lead Product Designer. Strategy, operations, and experience for scaling complex digital products.' }
     },
     'Case DesignOps.html': {
       pt: { t: 'DesignOps & Lideran\u00e7a de Design \u00b7 Jennifer Sousa', d: 'Case de gest\u00e3o e lideran\u00e7a de design: como estruturei uma opera\u00e7\u00e3o de design para desenvolver designers, aumentar a maturidade de UX e fortalecer decis\u00f5es de produto.' },
