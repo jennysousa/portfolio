@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-anim="on">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AcheiFarmácias · Jennifer Sousa</title>
+<meta name="description" content="Case de Product Design: como construí, sozinha, do zero, uma plataforma de compra e entrega de produtos de farmácia, do app do usuário final ao backoffice das farmácias parceiras." />
+<link rel="stylesheet" href="brand-tokens.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="case.css" />
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+   (function(c,l,a,r,i,t,y){
+       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+   })(window, document, "clarity", "script", "wytoc0m8iu");
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RXVHXYRN8"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-2RXVHXYRN8');
+</script>
+
+<!-- Hotjar Tracking Code for Portfolio Github -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6726772,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body data-screen-label="Case AcheiFarmácias">
+
+<a class="skip-link" href="#main-content" data-i18n="s.skip">Ir para o conteúdo principal</a>
+
+<div class="progress" id="progress" role="presentation" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav" aria-label="Navegação principal" data-i18n-label="s.nav.aria">
+  <a href="index.html" class="nav__brand">Jennifer Sousa<b>.</b></a>
+  <div class="nav__links">
+    <a class="nav__link" href="index.html" data-i18n="s.nav.home">Início</a>
+    <a class="nav__link" href="index.html#sobre" data-i18n="s.nav.scope">Sobre mim</a>
+    <div class="nav__item nav__dropdown">
+      <button type="button" class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="cases-menu" data-i18n="s.nav.cases">Cases</button>
+      <ul class="nav__dropdown-menu" id="cases-menu" role="menu" hidden>
+        <li role="none"><a role="menuitem" href="Case Smart Checkout.html" data-i18n="s.nav.cases.b2b">Pagamentos B2B / B2B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case Loop.html" data-i18n="s.nav.cases.saas">Plataforma SaaS</a></li>
+        <li role="none"><a role="menuitem" href="Case Achei Farmacias.html" data-i18n="s.nav.cases.b2c">Aplicativo B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case DesignOps.html" data-i18n="s.nav.cases.lead">Liderança</a></li>
+      </ul>
+    </div>
+    <a class="nav__link" href="index.html#numeros" data-i18n="s.nav.experience">Minha carreira</a>
+    <a class="nav__link nav__cta" href="index.html#contato" data-i18n="s.nav.cta">Vamos conversar?</a>
+  </div>
+</nav>
+
+<!-- ============ BREADCRUMB ============ -->
+<div class="casebar">
+  <div class="container">
+    <a class="backlink" href="index.html">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      <span data-i18n="s.backlink">Voltar para a página inicial</span>
+    </a>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ============ CASE HERO ============ -->
+<header class="section case-hero">
+  <div class="container">
+    <p class="case-hero__kind reveal" data-i18n="af.hero.kind">Case · Product Design · Marketplace de farmácias, app + backoffice</p>
+    <h1 class="case-hero__title reveal" data-d="1">AcheiFarmácias</h1>
+    <p class="case-hero__sub reveal" data-d="2" data-i18n="af.hero.sub">Como construí, sozinha, do zero, uma plataforma de compra e entrega de produtos de farmácia: um app para o usuário final encontrar, comparar e receber produtos, e um backoffice para as farmácias parceiras gerenciarem pedidos.</p>
+
+    <div class="case-feature case-feature--full reveal" data-d="3">
+      <img src="assets/case-achei-farmacias/af-hero.jpg" alt="Telas do app AcheiFarmácias: busca de produtos com preços comparados entre farmácias e tela inicial com categorias e promoções" loading="eager" />
+    </div>
+  </div>
+</header>
+
+<!-- ============ CARTÃO DE ABERTURA ============ -->
+<section class="case-facts-wrap">
+  <div class="container">
+    <div class="case-facts reveal">
+      <div class="case-role">
+        <p class="case-role__k" data-i18n="af.f1.k">Meu papel</p>
+        <p class="case-role__v" data-i18n="af.f1.v">Única product designer do projeto, responsável de ponta a ponta, da descoberta ao lançamento.</p>
+      </div>
+      <dl class="case-facts__row">
+        <div class="case-fact">
+          <dt data-i18n="af.f2.k">Canais</dt>
+          <dd data-i18n="af.f2.v">App mobile para o usuário final (Flutter) e backoffice desktop de gestão de pedidos para as farmácias parceiras.</dd>
+        </div>
+        <div class="case-fact">
+          <dt data-i18n="af.f3.k">Time envolvido</dt>
+          <dd data-i18n="af.f3.v">Time enxuto de 10 pessoas. Formava dupla de produto com o PO, reportando diretamente ao CEO, e colaborava de perto com os 3 desenvolvedores e o tech lead para viabilizar as soluções desenhadas.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUB-NAV ============ -->
+<div class="subnav" id="subnav">
+  <div class="container subnav__inner">
+    <nav class="subnav__links" aria-label="Seções do case" data-i18n-label="af.subnav.aria">
+      <a href="#introducao"><span class="subnav__n">01</span><span data-i18n="af.nav.introducao">Introdução</span></a>
+      <a href="#pesquisa"><span class="subnav__n">02</span><span data-i18n="af.nav.pesquisa">Pesquisa</span></a>
+      <a href="#objetivos"><span class="subnav__n">03</span><span data-i18n="af.nav.objetivos">Objetivos</span></a>
+      <a href="#solucoes"><span class="subnav__n">04</span><span data-i18n="af.nav.solucoes">Soluções</span></a>
+      <a href="#resultados"><span class="subnav__n">05</span><span data-i18n="af.nav.resultados">Resultados</span></a>
+      <a href="#aprendizados"><span class="subnav__n">06</span><span data-i18n="af.nav.aprendizados">Aprendizados</span></a>
+    </nav>
+  </div>
+</div>
+
+<!-- ============ 01 INTRODUÇÃO ============ -->
+<section class="cs" id="introducao">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">01</span>
+      <h2 class="cs__title" data-i18n="af.s01.title">Introdução ao projeto</h2>
+    </div>
+    <div class="cs-split">
+      <div class="cs-split__text">
+        <div class="cs__body reveal" data-d="1">
+          <p data-i18n="af.s01.p1">O objetivo era construir, do zero, uma plataforma de compra e entrega de produtos de farmácia: um app para o usuário final encontrar, comparar e receber produtos, e um backoffice para as farmácias parceiras gerenciarem pedidos.</p>
+          <p data-i18n="af.s01.p2">Do lado do usuário, a dor era o deslocamento físico para comprar produtos simples, a dificuldade de comparar preço entre farmácias próximas, e a falta de opção de compra remota para itens mais sensíveis. Do lado do negócio, a dor era a baixa presença digital das farmácias independentes, que respondiam por 65% do mercado brasileiro de farmácias (dado IQVIA), num setor movimentando R$124 bilhões ao ano, mas perdendo competitividade frente às grandes redes com operação digital própria.</p>
+          <p data-i18n="af.s01.p3">O problema existia porque o setor era, e em boa parte ainda é, fragmentado: muitos pequenos players, pouca digitalização, e nenhuma solução unificando comparação de preço e entrega numa experiência simples. A ideia nasceu de um pitch validado no programa da investidora Camila Farani, resumida internamente como "o iFood de farmácias".</p>
+        </div>
+      </div>
+      <div class="cs-split__media cs-split__media--bare reveal" data-d="1">
+        <img src="assets/case-achei-farmacias/af-startup-em-voce.png" alt="Cartaz do programa &quot;A Startup em Você&quot;, ciclo 2, com Camila Farani, pela Tegra Hub" loading="lazy" />
+        <img src="assets/case-achei-farmacias/af-logo.png" alt="Logo da AcheiFarmácias" loading="lazy" class="cs-split__media-gap" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 PESQUISA ============ -->
+<section class="cs" id="pesquisa">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">02</span>
+      <h2 class="cs__title" data-i18n="af.s02.title">Pesquisa</h2>
+    </div>
+    <ul class="mini-list mini-list--lg mini-list--2col reveal" data-d="1">
+      <li data-i18n="af.s02.i1">Desk research: dados de mercado do IQVIA (R$124 bi de mercado total, 65% de farmácias independentes), benchmark de concorrentes e soluções análogas.</li>
+      <li data-i18n="af.s02.i2">Ideação inicial: dinâmicas de Crazy 8s e matriz CSD (certezas, suposições, dúvidas) para mapear o que já sabíamos e o que precisava de validação.</li>
+      <li data-i18n="af.s02.i3">Pesquisa quantitativa: survey em parceria com CEFET Jr e ICTQ.</li>
+      <li data-i18n="af.s02.i4">Pesquisa qualitativa: 14 entrevistas contextuais, com perfil etário real dos entrevistados.</li>
+      <li data-i18n="af.s02.i5">Personas: 4 personas construídas a partir da pesquisa (empresária, pai, vó, psicóloga), sendo a persona "vó" a âncora principal para os princípios de acessibilidade do produto.</li>
+      <li data-i18n="af.s02.i6">Princípios de design: usabilidade, acessibilidade e UX writing, derivados diretamente da pesquisa com usuários.</li>
+    </ul>
+    <div class="stats-area">
+      <div class="stats stats--sm reveal" data-d="1">
+        <div class="stat">
+          <div class="stat__fig">R$<span>124</span> <em data-i18n="af.s02.stat1.unit">bi</em></div>
+          <p class="stat__label" data-i18n="af.s02.stat1.label">faturamento anual do mercado farmacêutico</p>
+        </div>
+        <div class="stat">
+          <div class="stat__fig"><span>65</span>%</div>
+          <p class="stat__label" data-i18n="af.s02.stat2.label">das farmácias hoje são independentes</p>
+        </div>
+        <div class="stat">
+          <div class="stat__fig"><span>25</span>%*</div>
+          <p class="stat__label" data-i18n="af.s02.stat3.label">do faturamento total do mercado</p>
+        </div>
+        <p class="stats__foot" data-i18n="af.s02.stat.foot">*Dados IQVIA, 2019.</p>
+      </div>
+      <div class="stats stats--sm reveal" data-d="1">
+        <div class="stat">
+          <div class="stat__fig"><span>50</span>,<span>3</span>%</div>
+          <p class="stat__label" data-i18n="af.s02.stat4.label">realizam pedidos por telefone</p>
+        </div>
+        <div class="stat">
+          <div class="stat__fig"><span>85</span>,<span>2</span>%</div>
+          <p class="stat__label" data-i18n="af.s02.stat5.label">favorabilidade em existir um app para resolver o problema</p>
+        </div>
+        <div class="stat">
+          <div class="stat__fig"><span>68</span>,<span>7</span>%*</div>
+          <p class="stat__label" data-i18n="af.s02.stat6.label">usariam o app</p>
+        </div>
+        <p class="stats__foot" data-i18n="af.s02.stat2.foot">*Pesquisa com a CEFET, 167 formulários respondidos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 OBJETIVOS ============ -->
+<section class="cs" id="objetivos">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">03</span>
+      <h2 class="cs__title" data-i18n="af.s03.title">Objetivos do negócio vs. objetivos do usuário</h2>
+    </div>
+    <div class="cs-split">
+      <div class="cs-split__text">
+        <div class="cs__body reveal" data-d="1">
+          <p data-i18n="af.s03.p1">A pesquisa inicial apontava público-alvo 35+ como foco principal, mas a operação real mostrou um público bem mais amplo, incluindo faixas etárias mais jovens comprando não só medicamentos, mas itens de outras categorias que não eram a aposta original do produto.</p>
+          <p data-i18n="af.s03.p2">A hipótese sobre o comportamento de compra também não se confirmou: esperávamos que "dor" fosse a categoria líder em pedidos, mas o item mais vendido no período foi teste de gravidez, provavelmente porque comprar esse produto numa farmácia física pode gerar constrangimento, algo que o digital resolve por natureza.</p>
+          <p data-i18n="af.s03.p3">Do lado do negócio, a promessa de transparência de preço esbarrava numa dinâmica que não estava totalmente sob nosso controle: cada farmácia parceira definia sua própria margem de desconto, criando uma disputa silenciosa entre parceiros por quem apareceria com o melhor preço primeiro.</p>
+        </div>
+      </div>
+      <div class="cs-split__media cs-split__media--bare reveal" data-d="1">
+        <img src="assets/case-achei-farmacias/af-categorias.gif" alt="Tela do app com busca por localização e categorias de produto: dor e febre, gripe e resfriado, gastrointestinal, higiene pessoal, infantil e primeiros socorros" loading="lazy" class="img-rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 SOLUÇÕES ============ -->
+<section class="cs" id="solucoes">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">04</span>
+      <h2 class="cs__title" data-i18n="af.s04.title">Soluções encontradas</h2>
+    </div>
+
+    <p class="cs-part reveal" data-i18n="af.s04.parta">a) Processo de solução</p>
+    <div class="cs-split">
+      <div class="cs-split__text">
+        <div class="cs__body reveal" data-d="1">
+          <p data-i18n="af.s04.a.p">Card sorting e arquitetura de informação para organizar categorias de produto. User flows principais desenhados: cadastro, compra, favoritos e cancelamento de pedido. Sketches, wireframes e styleguide completo (cores, tipografia, botões, forms) evoluindo até as telas finais de UI.</p>
+        </div>
+      </div>
+      <div class="cs-split__media cs-split__media--bare reveal" data-d="1">
+        <img src="assets/case-achei-farmacias/af-card-sorting.avif" alt="Exercício de card sorting com post-its organizando telas, categorias e funcionalidades do app" loading="lazy" class="img-rounded" />
+      </div>
+    </div>
+
+    <p class="cs-part reveal" data-i18n="af.s04.partb">b) Decisões com racional exposto</p>
+
+    <div class="dbox-list">
+      <div class="dbox-pair">
+      <div class="dbox reveal" data-d="1">
+        <h3 class="dbox__title" data-i18n="af.b1.title">Box 1 · Risco de descolamento entre pesquisa e público real</h3>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.b1.contexto">A pesquisa de base do produto foi conduzida no bairro da Tijuca, mas o MVP rodaria de fato em Niterói.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.b1.decidido">Sinalizei esse risco ao time antes do go-live, antecipando a possibilidade de o público real ser diferente do público pesquisado.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.b1.porque">Identificar esse tipo de descolamento cedo evita que o time só perceba o problema depois do lançamento, quando é mais caro corrigir.</p></div>
+      </div>
+
+      <div class="dbox reveal" data-d="1">
+        <h3 class="dbox__title" data-i18n="af.b3.title">Box 2 · Digitalizar a venda de remédios controlados</h3>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.b3.contexto">Em 2019, esse fluxo praticamente não existia digitalizado no mercado brasileiro, só venda presencial.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.b3.decidido">Desenhei e ajudei a implementar o fluxo completo, envio da receita pelo app, validação pela própria farmácia, e retirada da receita física pelo motoboy no momento da entrega.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.b3.porque">Era uma categoria de alta demanda que nenhum concorrente direto oferecia de forma digital, e resolver isso com segurança (validação humana da farmácia mantida) virava diferencial real.</p></div>
+      </div>
+      </div>
+
+      <div class="dbox reveal dbox--media" data-d="1">
+        <div class="dbox__col">
+        <h3 class="dbox__title" data-i18n="af.b2.title">Box 3 · Produto indisponível em estoque</h3>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.b2.contexto">Nem sempre o produto pedido estava disponível na farmácia no momento da compra.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.b2.decidido">Desenhei a solução de sugestão de produto similar, mostrando a diferença de preço entre o item original e o substituto.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.b2.porque">Evitava perder a venda inteira por falta de um único item, e dava ao usuário uma alternativa clara em vez de um erro seco.</p></div>
+        </div>
+        <div class="dbox__media dbox__media--single">
+          <img src="assets/case-achei-farmacias/af-estoque.png" alt="Tela de pedido com item fora de estoque, valor reajustado e opções de continuar ou voltar" loading="lazy" class="img-rounded" />
+        </div>
+      </div>
+
+      <div class="dbox reveal dbox--media" data-d="1">
+        <div class="dbox__col">
+        <h3 class="dbox__title" data-i18n="af.b4.title">Box 4 · Interface para o usuário mais vulnerável (persona "vó")</h3>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.b4.contexto">Parte relevante do público tinha baixa familiaridade digital e precisava de uma experiência sem ambiguidade.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.b4.decidido">Tipografia maior, hierarquia visual simplificada com um único caminho óbvio por tela, contraste mais alto nos elementos de ação, e UX writing direto, sem jargão técnico ou nomes de categoria genéricos.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.b4.porque">Projetar para o extremo mais exigente do público elevava o padrão de clareza para todos os outros perfis também.</p></div>
+        </div>
+        <div class="dbox__media dbox__media--single">
+          <img src="assets/case-achei-farmacias/assistente virtual.png" alt="Modal do assistente virtual sobre resultados de busca nas farmácias da região, com opções &quot;não mostrar mais&quot; e &quot;ok, entendi&quot;" loading="lazy" class="img-rounded" />
+        </div>
+      </div>
+
+      <div class="dbox reveal dbox--media" data-d="1">
+        <div class="dbox__col">
+        <h3 class="dbox__title" data-i18n="af.b5.title">Box 5 · Cuidado contínuo com o usuário</h3>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.b5.contexto">Parte do público de 35+ fazia uso contínuo de medicação, e pesquisa e feedback de usuário indicaram risco real de esquecimento de dose e de renovação de receita, além do risco comercial de perder o usuário de vista entre uma compra e outra.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.b5.decidido">Criei a funcionalidade "Meus lembretes", permitindo cadastrar cada medicamento com horário de alerta, frequência (diária ou semanal), data de início e fim do tratamento, e acesso rápido à receita anexada, com visão de calendário e visão do dia.</p></div>
+        <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.b5.porque">A decisão nasceu dupla, desde o início. Cuidar do usuário de forma contínua fazia parte da missão do produto, e trazer o usuário de volta ao app com frequência tinha valor real de negócio. Não tratei como concessão de uma prioridade sobre a outra, as duas coincidiam na mesma solução.</p></div>
+        </div>
+        <div class="dbox__media">
+          <img src="assets/case-achei-farmacias/af-lembretes-1.png" alt="Tela de calendário de lembretes de medicação com horários e visualização por dia" loading="lazy" class="img-rounded" />
+          <img src="assets/case-achei-farmacias/af-lembretes-2.png" alt="Tela &quot;Meus lembretes&quot; com lista de medicamentos, frequência, datas e botão para criar novo lembrete" loading="lazy" class="img-rounded" />
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-block reveal">
+      <h3 class="cs-block__title" data-i18n="af.tech.title">Colaboração técnica</h3>
+      <div class="dbox-list">
+        <div class="dbox">
+          <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.contexto">Contexto</p><p class="dbox__v" data-i18n="af.tech.contexto">O PO defendia a ideia de um assistente virtual guiando o usuário passo a passo em cada etapa da compra, no formato de wizard.</p></div>
+          <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.decidido">O que foi decidido</p><p class="dbox__v" data-i18n="af.tech.decidido">Alinhado com um dos desenvolvedores, construí o argumento de que a assistente deveria ajudar sem ser invasiva, evitando gerar incômodo em vez de facilitar. Incluímos um botão de "não mostrar mais", um padrão já familiar para usuários Android, sistema operacional predominante entre os usuários cadastrados no app.</p></div>
+          <div class="dbox__field"><p class="dbox__k" data-i18n="af.k.porque">Por quê</p><p class="dbox__v" data-i18n="af.tech.porque">A proximidade com o time de desenvolvimento permitiu unir argumento técnico e de UX para reverter uma decisão de produto que, sem esse contraponto, teria virado uma experiência mais invasiva do que útil.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 RESULTADOS ============ -->
+<section class="cs" id="resultados">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">05</span>
+      <h2 class="cs__title" data-i18n="af.s05.title">Resultados</h2>
+    </div>
+    <div class="cs-split">
+      <div class="cs-split__text">
+        <div class="cs__body reveal" data-d="1">
+          <p data-i18n="af.s05.p1">O MVP foi lançado com 6 farmácias parceiras ativas. Conduzi testes de usabilidade com 5 usuários reais, tanto na fase pré-lançamento (validando o job to be done principal) quanto pós-lançamento (aplicando a metodologia SUS para orientar o roadmap seguinte). Implementamos uma avaliação de satisfação (CSAT) por estrelas, que alcançou média de 4,4 de 5. O programa de indicação (member get member) teve peso relevante na aquisição: aproximadamente 30% dos novos cadastros no período vieram por essa via. Acompanhei os primeiros 4 meses de operação real antes de sair da empresa.</p>
+        </div>
+        <div class="hero-stats hero-stats--stack reveal" data-d="1">
+          <div class="hstat">
+            <span class="hstat__fig"><span class="count" data-to="4.4" data-decimals="1">0</span> <em data-i18n="af.r1.unit">/ 5</em></span>
+            <span class="hstat__label" data-i18n="af.r1.label">CSAT médio validado em operação real</span>
+          </div>
+          <div class="hstat">
+            <span class="hstat__fig"><span class="count" data-to="6">0</span> <em data-i18n="af.r2.unit">parceiras</em></span>
+            <span class="hstat__label" data-i18n="af.r2.label">farmácias ativas no lançamento do MVP</span>
+          </div>
+          <div class="hstat">
+            <span class="hstat__fig"><span class="count" data-to="30">0</span><em>%</em></span>
+            <span class="hstat__label" data-i18n="af.r3.label">dos novos cadastros vieram do programa de indicação</span>
+          </div>
+        </div>
+      </div>
+      <div class="cs-split__media cs-split__media--bare reveal" data-d="1">
+        <img src="assets/case-achei-farmacias/af-avaliacao.png" alt="Modal de avaliação por estrelas perguntando sobre a experiência com o app AcheiFarmácias" loading="lazy" class="img-rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 APRENDIZADOS ============ -->
+<section class="cs" id="aprendizados">
+  <div class="container">
+    <div class="cs__head reveal">
+      <span class="cs__num">06</span>
+      <h2 class="cs__title" data-i18n="af.s06.title">Aprendizados / Fechamento</h2>
+    </div>
+    <div class="cs__body reveal" data-d="1">
+      <p data-i18n="af.s06.p1">Ser a única designer do produto me tirou a rede de segurança de ter outra pessoa de design por perto para validar o que era um bom padrão visual. Isso me obrigou a pesquisar muito mais referência de mercado, de e-commerce, de outros apps, de design em geral, porque eu era a própria referência visual do time. Isso elevou o nível de exigência que carrego até hoje com as minhas entregas, e moldou boa parte de como sou detalhista com UI.</p>
+      <p data-i18n="af.s06.p2">A avaliação por estrelas alcançou uma boa média (4,4 de 5), mas não tínhamos um campo de texto para capturar feedback qualitativo, então sabíamos que a experiência era bem avaliada sem entender exatamente o porquê. Além disso, boa parte dos usuários saía do app sem avaliar, comportamento esperado depois de já ter recebido o produto em casa. Isso me ensinou a diferença entre "coletar algum feedback" e "coletar o feedback certo": um número sozinho, sem contexto qualitativo, não é suficiente pra priorizar o que melhorar primeiro.</p>
+    </div>
+    <div class="cs-split">
+      <div class="cs-split__text">
+        <div class="statement reveal" data-d="1">
+          <p data-i18n="af.s06.stmt">"Aprendi que um bom padrão visual não vem da opinião de quem está no mesmo time, vem de pesquisar referência real de mercado. Isso refinou meu olhar para craft, uma exigência que carrego comigo até hoje."</p>
+        </div>
+      </div>
+      <div class="cs-split__media cs-split__media--bare cs-split__media--statement reveal" data-d="1">
+        <img src="assets/case-achei-farmacias/af-mockups.png" alt="Telas do app AcheiFarmácias: busca de produto por categoria, splash da logo e grid de categorias" loading="lazy" class="img-rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="case-cta">
+  <div class="container">
+    <h2 class="case-cta__title reveal" data-d="1" data-i18n="s.cta.title">Vamos <em>conversar?</em></h2>
+
+    <div class="contact__links case-cta__contacts reveal" data-d="2">
+      <button type="button" class="clink clink--copy" data-copy="jenniferellen.18@gmail.com" aria-label="Copiar e-mail jenniferellen.18@gmail.com" data-i18n-label="s.copy.label">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        <span class="clink__body"><span class="label">Email</span> · jenniferellen.18@gmail.com</span>
+        <span class="clink__status" role="status" aria-live="polite"></span>
+      </button>
+      <a class="clink" href="https://www.linkedin.com/in/jennysousa/" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-10h4v1.5"></path><rect x="2" y="9" width="4" height="11"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        <span><span class="label">LinkedIn</span> · /in/jennysousa</span>
+        <svg class="ext-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path></svg>
+        <span class="sr-only" data-i18n="s.newtab">(abre em nova aba)</span>
+      </a>
+      <a class="clink" href="https://wa.me/5521969173592" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
+        <span><span class="label">WhatsApp</span> · (21) 96917-3592</span>
+        <svg class="ext-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path></svg>
+        <span class="sr-only" data-i18n="s.newtab">(abre em nova aba)</span>
+      </a>
+    </div>
+
+    <nav class="case-nav reveal" data-d="3" aria-label="Navegação entre cases">
+      <a class="btn-ghost btn-ghost--link" href="index.html">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span data-i18n="s.backlink">Voltar para a página inicial</span>
+      </a>
+      <a class="btn-ghost btn-ghost--link btn-ghost--next" href="Case DesignOps.html">
+        <span data-i18n="af.next">Próximo case: DesignOps</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </nav>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__info">
+    <span data-i18n="s.footer.copy">© 2026 Jennifer Sousa · Desenhado e desenvolvido com IA como copiloto</span>
+    <span class="footer__a11y" data-i18n="s.footer.a11y">Acessibilidade verificada · WCAG 2.1 AA</span>
+  </div>
+  <button class="footer__top" id="toTop"><span data-i18n="s.footer.top">Voltar ao topo</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+</footer>
+
+<!-- ============ LIGHTBOX / SLIDESHOW ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" data-i18n-label="s.lb.dialog" hidden>
+  <button class="lb__btn lb__close" type="button" aria-label="Fechar" data-i18n-label="s.lb.close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
+  <button class="lb__btn lb__prev" type="button" aria-label="Imagem anterior" data-i18n-label="s.lb.prev">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+  <button class="lb__btn lb__next" type="button" aria-label="Próxima imagem" data-i18n-label="s.lb.next">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+  <div class="lb__stage">
+    <span class="lb__count" id="lbCount"></span>
+    <img class="lb__img" id="lbImg" alt="" />
+    <span class="lb__cap" id="lbCap"></span>
+  </div>
+</div>
+
+<script>
+(function(){var links=[].slice.call(document.querySelectorAll('.subnav__links a'));if(!links.length)return;var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+function set(i){links.forEach(function(a,n){a.classList.toggle('is-active',n===i);});}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)set(secs.indexOf(e.target));});},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){if(s)io.observe(s);});}
+})();
+</script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

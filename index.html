@@ -52,7 +52,15 @@
   <div class="nav__links">
     <a class="nav__link" href="#top" data-i18n="s.nav.home">Início</a>
     <a class="nav__link" href="#sobre" data-i18n="s.nav.scope">Sobre mim</a>
-    <a class="nav__link" href="#cases" data-i18n="s.nav.cases">Cases</a>
+    <div class="nav__item nav__dropdown">
+      <button type="button" class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="cases-menu" data-i18n="s.nav.cases">Cases</button>
+      <ul class="nav__dropdown-menu" id="cases-menu" role="menu" hidden>
+        <li role="none"><a role="menuitem" href="Case Smart Checkout.html" data-i18n="s.nav.cases.b2b">Pagamentos B2B / B2B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case Loop.html" data-i18n="s.nav.cases.saas">Plataforma SaaS</a></li>
+        <li role="none"><a role="menuitem" href="Case Achei Farmacias.html" data-i18n="s.nav.cases.b2c">Aplicativo B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case DesignOps.html" data-i18n="s.nav.cases.lead">Liderança</a></li>
+      </ul>
+    </div>
     <a class="nav__link" href="#numeros" data-i18n="s.nav.experience">Minha carreira</a>
     <a class="nav__link nav__cta" href="#contato" data-i18n="s.nav.cta">Vamos conversar?</a>
   </div>
@@ -163,7 +171,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </span>
       </a>
-      <div class="case reveal" data-d="1">
+      <a class="case reveal" data-d="1" href="Case Achei Farmacias.html">
         <div class="case__thumb"><img src="assets/case-loop/thumb-achei.png" alt="" loading="lazy" /></div>
         <div class="case__main">
           <span class="case__kind" data-i18n="h.c4.kind">Produto B2C e plataforma B2B</span>
@@ -171,8 +179,10 @@
           <p class="case__desc" data-i18n="h.c4.desc">A construção de um ecossistema onde clientes escolhiam o melhor valor dos produtos de farmácia e faziam pedidos no delivery.</p>
           <p class="case__tags" data-i18n="h.c4.tags">Healthtech · Delivery · UX Research · Usability Test</p>
         </div>
-        <span class="case__cta"><span class="soon" data-i18n="h.c4.cta">Em breve</span></span>
-      </div>
+        <span class="case__cta"><span class="soon" data-i18n="h.c4.cta">Exibir case</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
     </div>
   </div>
 </section>

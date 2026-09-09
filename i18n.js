@@ -19,6 +19,10 @@
     's.nav.scope':       'About me',
     's.nav.experience':  'My career',
     's.nav.cases':       'Cases',
+    's.nav.cases.b2b':   'B2B / B2B2C Payments',
+    's.nav.cases.saas':  'SaaS Platform',
+    's.nav.cases.b2c':   'B2C App',
+    's.nav.cases.lead':  'Leadership',
     's.nav.about':       'Professional experience',
     's.nav.cta':         "Let\u2019s talk?",
     's.footer.copy':     '© 2026 Jennifer Sousa · Designed and developed with AI as copilot',
@@ -83,7 +87,7 @@
     'h.c4.name':      'How we brought to life a local pharmacy solution that won a Camila Farani challenge',
     'h.c4.desc':      'Building an ecosystem where customers could find the best pharmacy product prices and place delivery orders.',
     'h.c4.tags':      'Healthtech · Delivery · UX Research · Usability Test',
-    'h.c4.cta':       'Coming soon',
+    'h.c4.cta':       'View case',
 
     'h.contact.eyebrow': 'Contact',
     'h.contact.title':   'Let\u2019s <em>talk?</em>',
@@ -204,6 +208,108 @@
     'do.s08.p2':       'As an evolution, I began exploring the use of AI to accelerate analyses, structure hypotheses, support documentation, and expand designers\u2019 repertoire, without replacing the critical thinking that sustains good product decisions.',
 
     'do.next':         'Next case: Smart Checkout',
+
+
+    'af.hero.kind':    'Case · Product Design · Pharmacy marketplace, app + backoffice',
+    'af.hero.sub':     'How I built, solo, from scratch, a pharmacy shopping and delivery platform: a consumer app for finding, comparing, and receiving products, plus a backoffice for partner pharmacies to manage orders.',
+    'af.hero.imgph':   'Hero image of the app (coming soon)',
+    'af.f1.k':         'My role',
+    'af.f1.v':         'Sole product designer on the project, owning it end-to-end, from discovery to launch.',
+    'af.f2.k':         'Channels',
+    'af.f2.v':         'Consumer mobile app (Flutter) and a desktop backoffice for order management used by partner pharmacies.',
+    'af.f3.k':         'Team involved',
+    'af.f3.v':         'Lean 10-person team. I formed the product duo with the PO, reporting directly to the CEO, and worked closely with the 3 developers and the tech lead to bring designed solutions to life.',
+    'af.subnav.aria':  'Case sections',
+    'af.nav.introducao': 'Introduction',
+    'af.nav.pesquisa':   'Research',
+    'af.nav.objetivos':  'Goals',
+    'af.nav.solucoes':   'Solutions',
+    'af.nav.resultados': 'Results',
+    'af.nav.aprendizados':'Learnings',
+
+    'af.s01.title':    'Project introduction',
+    'af.s01.p1':       'The goal was to build, from scratch, a pharmacy shopping and delivery platform: a consumer app for finding, comparing, and receiving products, plus a backoffice for partner pharmacies to manage orders.',
+    'af.s01.p2':       'On the user side, the pain point was the need to travel physically for simple purchases, the difficulty comparing prices across nearby pharmacies, and the lack of a remote option for more sensitive items. On the business side, the pain point was low digital presence among independent pharmacies, which accounted for 65% of the Brazilian pharmacy market (IQVIA data), in a sector moving R$124 billion a year, but losing ground to large chains with their own digital operations.',
+    'af.s01.p3':       'The problem existed because the sector was, and largely still is, fragmented: many small players, low digitization, and no solution unifying price comparison and delivery into one simple experience. The idea originated from a pitch validated in investor Camila Farani\u2019s program, internally summarized as "the iFood of pharmacies."',
+
+    'af.s02.title':    'Research',
+    'af.s02.i1':       'Desk research: IQVIA market data (R$124B total market, 65% independent pharmacies), competitor and analogous-solution benchmarking.',
+    'af.s02.i2':       'Initial ideation: Crazy 8s exercises and a CSD matrix (certainties, assumptions, doubts) to map what we already knew versus what needed validation.',
+    'af.s02.i3':       'Quantitative research: survey run in partnership with CEFET Jr and ICTQ.',
+    'af.s02.i4':       'Qualitative research: 14 contextual interviews, with a real age-range profile of participants.',
+    'af.s02.i5':       'Personas: 4 personas built from the research (business owner, father, grandmother, psychologist), with the "grandmother" persona serving as the main anchor for the product\u2019s accessibility principles.',
+    'af.s02.i6':       'Design principles: usability, accessibility, and UX writing, derived directly from user research.',
+
+    'af.s03.title':    'Business goals vs. user goals',
+    'af.s03.p1':       'Initial research pointed to a 35+ audience as the primary target, but real operation showed a much broader audience, including younger age groups buying not just medication but items from other categories that weren\u2019t the product\u2019s original bet.',
+    'af.s03.p2':       'The purchasing-behavior hypothesis also didn\u2019t hold up: we expected "pain relief" to be the leading order category, but the top-selling item in the period was pregnancy tests, likely because buying that item at a physical pharmacy can feel embarrassing, something digital naturally solves.',
+    'af.s03.p3':       'On the business side, the price-transparency promise ran into a dynamic that wasn\u2019t fully within our control: each partner pharmacy set its own discount margin, creating a quiet competition among partners over whose price would show up first as the best deal.',
+
+    'af.s04.title':    'Solutions',
+    'af.s04.parta':    'a) Solution process',
+    'af.s04.a.p':      'Card sorting and information architecture to organize product categories. Core user flows designed: sign-up, purchase, favorites, and order cancellation. Sketches, wireframes, and a full style guide (colors, typography, buttons, forms) evolving into final UI screens.',
+    'af.s04.partb':    'b) Decisions with exposed rationale',
+
+    'af.k.contexto':   'Context',
+    'af.k.decidido':   'What was decided',
+    'af.k.porque':     'Why',
+
+    'af.b1.title':     'Box 1 · Risk of mismatch between research and real audience',
+    'af.b1.contexto':  'The product\u2019s foundational research was conducted in the Tijuca neighborhood, but the MVP would actually run in Niter\u00f3i.',
+    'af.b1.decidido':  'I flagged this risk to the team before go-live, anticipating that the real audience could differ from the researched one.',
+    'af.b1.porque':    'Catching this kind of mismatch early avoids the team only noticing the problem after launch, when it\u2019s more expensive to fix.',
+
+    'af.b2.title':     'Box 2 · Out-of-stock items',
+    'af.b2.contexto':  'The requested product wasn\u2019t always available at the pharmacy at the time of purchase.',
+    'af.b2.decidido':  'I designed a similar-product suggestion feature, showing the price difference between the original item and the substitute.',
+    'af.b2.porque':    'It avoided losing the entire sale over a single missing item, and gave the user a clear alternative instead of a dead-end error.',
+    'af.b2.ph':        'Similar-product suggestion (coming soon)',
+
+    'af.b3.title':     'Box 3 · Digitizing controlled-medication sales',
+    'af.b3.contexto':  'In 2019, this flow barely existed digitally in the Brazilian market, purchases were in-person only.',
+    'af.b3.decidido':  'I designed and helped implement the full flow, prescription upload through the app, validation by the pharmacy itself, and physical prescription pickup by the courier at delivery.',
+    'af.b3.porque':    'It was a high-demand category no direct competitor offered digitally, and solving it safely (keeping the pharmacy\u2019s human validation step) became a real differentiator.',
+
+    'af.b4.title':     'Box 4 · Interface for the most vulnerable user (the "grandmother" persona)',
+    'af.b4.contexto':  'A meaningful part of the audience had low digital familiarity and needed a friction-free, unambiguous experience.',
+    'af.b4.decidido':  'Larger typography, a simplified visual hierarchy with a single obvious path per screen, higher contrast on action elements, and direct UX writing free of technical jargon or generic category names.',
+    'af.b4.porque':    'Designing for the most demanding edge of the audience raised the clarity bar for every other user profile too.',
+
+    'af.b5.title':     'Box 5 · Ongoing user care',
+    'af.b5.contexto':  'Part of the 35+ user base used medication on an ongoing basis, and both research and user feedback pointed to a real risk of missed doses and lapsed prescriptions, alongside the business risk of losing touch with the user between purchases.',
+    'af.b5.decidido':  'I designed the "My Reminders" feature, letting users register each medication with an alert time, frequency (daily or weekly), treatment start and end dates, and quick access to the attached prescription, with both a calendar view and a daily view.',
+    'af.b5.porque':    'The decision was dual from the start. Ongoing user care was part of the product\u2019s mission, and bringing users back to the app regularly had real business value. I didn\u2019t treat one as a trade-off against the other, both aligned in the same solution.',
+    'af.b5.note':      'No quantitative result available specifically for this feature.',
+    'af.b5.ph1':       '"My Reminders" screen (coming soon)',
+    'af.b5.ph2':       '"My Reminders" screen · detail (coming soon)',
+
+    'af.tech.title':   'Technical collaboration',
+    'af.tech.contexto':'The PO pushed for a virtual assistant guiding the user step by step through each stage of the purchase, wizard-style.',
+    'af.tech.decidido':'Working with one of the developers, I built the case that the assistant should help without being invasive, avoiding annoyance instead of easing the flow. We added a "don\u2019t show this again" button, a pattern already familiar to Android users, the predominant OS among the app\u2019s registered users.',
+    'af.tech.porque':  'Closeness with the development team let me pair technical and UX arguments to reverse a product decision that, without that counterpoint, would have turned into a more invasive than useful experience.',
+
+    'af.s05.title':    'Results',
+    'af.s05.p1':       'The MVP launched with 6 active partner pharmacies. I ran usability testing with 5 real users, both pre-launch (validating the core job to be done) and post-launch (applying SUS methodology to guide the following UX roadmap). We implemented a star-based satisfaction rating (CSAT), which reached an average of 4.4 out of 5. The referral program (member get member) carried meaningful weight in acquisition: approximately 30% of new sign-ups in the period came through it. I tracked the first 4 months of real operation before leaving the company.',
+    'af.r1.unit':      '/ 5',
+    'af.r1.label':     'Average CSAT validated in real operation',
+    'af.r2.unit':      'pharmacies',
+    'af.r2.label':     'active pharmacies at MVP launch',
+    'af.r3.label':     'of new sign-ups came from the referral program',
+
+    'af.s06.title':    'Learnings / Closing',
+    'af.s06.p1':       'Being the product\u2019s sole designer took away the safety net of having another design person nearby to validate what counted as a good visual standard. It pushed me to research far more market references, e-commerce, other apps, design in general, because I was the team\u2019s own visual reference point. That raised the bar I hold myself to today with my deliverables, and shaped a lot of how detail-oriented I still am with UI.',
+    'af.s06.p2':       'The star rating reached a solid average (4.4 out of 5), but we had no text field to capture qualitative feedback, so we knew the experience was well-rated without fully understanding why. Also, a large share of users left the app without rating it at all, expected behavior once they\u2019d already received the product at home. This taught me the difference between "collecting some feedback" and "collecting the right feedback": a number on its own, without qualitative context, isn\u2019t enough to prioritize what to improve first.',
+    'af.s06.stmt':     '"I learned that a good visual standard doesn\u2019t come from the opinion of whoever\u2019s on your team, it comes from researching real market references. That sharpened my eye for craft, a standard I still hold myself to today."',
+    'af.next':         'Next case: DesignOps',
+    'af.s02.stat1.unit':  'B',
+    'af.s02.stat1.label': 'annual revenue of the pharmaceutical market',
+    'af.s02.stat2.label': 'of pharmacies are currently independent',
+    'af.s02.stat3.label': 'of the market\u2019s total revenue',
+    'af.s02.stat.foot':   '*IQVIA data, 2019.',
+    'af.s02.stat4.label': 'place orders by phone',
+    'af.s02.stat5.label': 'favorability toward an app solving this problem',
+    'af.s02.stat6.label': 'would use the app',
+    'af.s02.stat2.foot':  '*Survey with CEFET, 167 forms answered.',
 
     /* ========== CASE SMART CHECKOUT ========== */
     'sc.hero.kind':    'Case · Product Design Leadership · Payments platform',
@@ -502,6 +608,10 @@
     'Case Loop.html': {
       pt: { t: 'Loop \u00b7 Digital Engagement Platform \u00b7 Jennifer Sousa', d: 'Case de Product Design: como transformamos uma opera\u00e7\u00e3o manual de ofertas em uma plataforma de orquestra\u00e7\u00e3o digital, com Design System, IA/ML e Next Best Action em telecom.' },
       en: { t: 'Loop \u00b7 Digital Engagement Platform \u00b7 Jennifer Sousa', d: 'Product Design case: how we turned a manual offer operation into a digital orchestration platform, with Design System, AI/ML, and Next Best Action in telecom.' }
+    },
+    'Case Achei Farmacias.html': {
+      pt: { t: 'AcheiFarm\u00e1cias \u00b7 Jennifer Sousa', d: 'Case de Product Design: como constru\u00ed, sozinha, do zero, uma plataforma de compra e entrega de produtos de farm\u00e1cia, do app do usu\u00e1rio final ao backoffice das farm\u00e1cias parceiras.' },
+      en: { t: 'AcheiFarm\u00e1cias \u00b7 Jennifer Sousa', d: 'Product Design case: how I built, solo, from scratch, a pharmacy shopping and delivery platform, from the consumer app to the partner pharmacies\u2019 backoffice.' }
     }
   };
 

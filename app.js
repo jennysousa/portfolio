@@ -4,6 +4,56 @@
   var root = document.documentElement;
   var animOff = function () { return root.getAttribute("data-anim") === "off"; };
 
+  /* ---- Nav: Cases dropdown ---- */
+  (function () {
+    var item = document.querySelector(".nav__dropdown");
+    if (!item) return;
+    var trigger = item.querySelector(".nav__dropdown-trigger");
+    var menu = item.querySelector(".nav__dropdown-menu");
+    var menuItems = Array.prototype.slice.call(menu.querySelectorAll("a"));
+    var hoverTimer = null;
+    function open() {
+      menu.hidden = false;
+      trigger.setAttribute("aria-expanded", "true");
+    }
+    function close(focusTrigger) {
+      menu.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+      if (focusTrigger) trigger.focus();
+    }
+    function isOpen() { return !menu.hidden; }
+    trigger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      isOpen() ? close(false) : open();
+    });
+    item.addEventListener("mouseenter", function () {
+      clearTimeout(hoverTimer);
+      open();
+    });
+    item.addEventListener("mouseleave", function () {
+      hoverTimer = setTimeout(function () { close(false); }, 150);
+    });
+    item.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { close(true); return; }
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        if (!isOpen()) { open(); menuItems[0].focus(); return; }
+        var active = document.activeElement;
+        var idx = menuItems.indexOf(active);
+        var next = e.key === "ArrowDown" ? idx + 1 : idx - 1;
+        if (next < 0) next = menuItems.length - 1;
+        if (next >= menuItems.length) next = 0;
+        menuItems[next].focus();
+      }
+    });
+    document.addEventListener("click", function (e) {
+      if (!item.contains(e.target)) close(false);
+    });
+    document.addEventListener("focusin", function (e) {
+      if (!item.contains(e.target)) close(false);
+    });
+  })();
+
   /* ---- Scroll reveal ---- */
   var revealEls = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
 
@@ -42,16 +92,17 @@
 
   /* ---- Count-up for stats ---- */
   function countUp(el) {
-    var to = parseInt(el.getAttribute("data-to"), 10) || 0;
-    if (animOff()) { el.textContent = String(to); return; }
+    var to = parseFloat(el.getAttribute("data-to")) || 0;
+    var dec = parseInt(el.getAttribute("data-decimals"), 10) || 0;
+    if (animOff()) { el.textContent = to.toFixed(dec).replace(".", ","); return; }
     var dur = 1100, start = null;
     function step(ts) {
       if (start === null) start = ts;
       var p = Math.min((ts - start) / dur, 1);
       var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = String(Math.round(to * eased));
+      el.textContent = (to * eased).toFixed(dec).replace(".", ",");
       if (p < 1) requestAnimationFrame(step);
-      else el.textContent = String(to);
+      else el.textContent = to.toFixed(dec).replace(".", ",");
     }
     requestAnimationFrame(step);
   }
