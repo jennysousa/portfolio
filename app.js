@@ -158,6 +158,7 @@
   if (heroCarousel) {
     var hcSlides = Array.prototype.slice.call(heroCarousel.querySelectorAll(".hero__slide"));
     var hcDots = Array.prototype.slice.call(heroCarousel.querySelectorAll(".hero__dot"));
+    var hcCaption = heroCarousel.querySelector(".hero__carousel-caption");
     var hcIndex = 0;
     var hcInterval = 5000;
     var hcTimer = null;
@@ -168,6 +169,7 @@
         d.classList.toggle("is-done", i < hcIndex);
         d.setAttribute("aria-selected", i === hcIndex ? "true" : "false");
       });
+      if (hcCaption && hcSlides[hcIndex]) hcCaption.textContent = hcSlides[hcIndex].getAttribute("data-cap") || "";
     }
     function hcNext() { hcIndex = (hcIndex + 1) % hcSlides.length; hcRender(); hcSchedule(); }
     function hcSchedule() {

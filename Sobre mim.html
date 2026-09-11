@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sobre mim · Jennifer Sousa</title>
-<meta name="description" content="Sobre Jennifer Sousa, líder de Product Design que atua na interseção entre pessoas, processos e produtos." />
+<title>Sobre Mim · Jennifer Sousa</title>
+<meta name="description" content="Como minha carreira foi construída: trajetória em pagamentos digitais, checkout, plataformas white-label B2B2C e produto complexo." />
 <link rel="stylesheet" href="brand-tokens.css" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="case.css" />
@@ -39,7 +39,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 </head>
-<body data-screen-label="Sobre mim">
+<body data-screen-label="Sobre Mim">
 
 <a class="skip-link" href="#main-content" data-i18n="s.skip">Ir para o conteúdo principal</a>
 
@@ -50,10 +50,17 @@
   <a href="index.html" class="nav__brand">Jennifer Sousa<b>.</b></a>
   <div class="nav__links">
     <a class="nav__link" href="index.html" data-i18n="s.nav.home">Início</a>
-    <a class="nav__link" href="index.html#highlights" data-i18n="s.nav.scope">Atuação</a>
-    <a class="nav__link" href="index.html#numeros" data-i18n="s.nav.experience">Experiência</a>
-    <a class="nav__link" href="index.html#cases" data-i18n="s.nav.cases">Cases</a>
-    <a class="nav__link" href="Sobre mim.html" data-i18n="s.nav.about">Sobre mim</a>
+    <a class="nav__link" href="index.html#processo" data-i18n="s.nav.scope">Processo de design</a>
+    <div class="nav__item nav__dropdown">
+      <button type="button" class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="cases-menu" data-i18n="s.nav.cases">Cases</button>
+      <ul class="nav__dropdown-menu" id="cases-menu" role="menu" hidden>
+        <li role="none"><a role="menuitem" href="Case Smart Checkout.html" data-i18n="s.nav.cases.b2b">Pagamentos B2B / B2B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case Loop.html" data-i18n="s.nav.cases.saas">Plataforma SaaS</a></li>
+        <li role="none"><a role="menuitem" href="Case Achei Farmacias.html" data-i18n="s.nav.cases.b2c">Aplicativo B2C</a></li>
+        <li role="none"><a role="menuitem" href="Case DesignOps.html" data-i18n="s.nav.cases.lead">Liderança</a></li>
+      </ul>
+    </div>
+    <a class="nav__link" href="Sobre Mim.html" data-i18n="s.nav.experience">Sobre Mim</a>
     <a class="nav__link nav__cta" href="index.html#contato" data-i18n="s.nav.cta">Vamos conversar?</a>
   </div>
 </nav>
@@ -70,23 +77,162 @@
 
 <main id="main-content">
 
-<!-- ============ ABOUT HERO ============ -->
-<header class="section case-hero" id="top">
+<!-- ============ ABERTURA ============ -->
+<header class="section" data-screen-label="Abertura">
   <div class="container">
-    <p class="case-hero__kind reveal" data-i18n="ab.hero.kind">Sobre mim</p>
-    <h1 class="case-hero__title reveal" data-d="1" data-i18n="ab.hero.title">Atuo na interseção entre <em>pessoas, processos e produtos</em>.</h1>
+    <div class="sobre-open">
+      <div class="sobre-open__text">
+        <img src="assets/jenny-photo.jpg" alt="Jennifer Sousa" class="sobre-open__avatar reveal" data-d="1" />
+        <h1 class="case-hero__title sobre-open__title reveal" data-d="1" data-i18n="ab.open.title">Como minha carreira foi construída</h1>
+        <p class="case-hero__sub reveal" data-d="2" data-i18n="ab.open.bio1">Comecei no design gráfico, mas foi na migração para produto digital, num contexto de e-commerce, que descobri o que eu realmente queria fazer: fluxo, arquitetura de informação e jornada, não a parte mais visual do design. Fui atrás de ritmo acelerado numa startup, ajudando a lançar um MVP do zero, e de lá segui aprofundando em produtos de alta complexidade regulatória e operacional, meu domínio: pagamentos digitais, checkout e plataformas white-label B2B2C. Consolidei essa base em mais de 6 anos numa multinacional, onde me tornei especialista e depois líder.</p>
+        <p class="case-hero__sub reveal" data-d="2" data-i18n="ab.open.bio2">Sou uma designer curiosa por natureza. Invisto em cursos e participo de eventos do setor pra me manter atualizada. Também sou apaixonada por filosofia e por entender comportamento humano, um interesse que conversa direto com o design centrado no usuário e no comportamental, com aquele princípio de que a ação de alguém nem sempre bate com o que essa pessoa diz que faz. A filosofia alimenta essa sede de buscar aprimoramento, esse entendimento de que ainda sei pouco e sempre tem conhecimento novo pra buscar.</p>
+        <p class="case-hero__sub reveal" data-d="2" data-i18n="ab.open.bio3">Hoje dedico boa parte dessa energia a aprofundar o uso de IA nos processos de design, uma frente que considero essencial pro futuro da profissão.</p>
+      </div>
+      <div class="sobre-open__carousel reveal" data-d="2" data-hero-carousel aria-roledescription="carrossel" data-i18n-aria-label="h.hero.carousel.label" aria-label="Momentos da carreira">
+        <div class="hero__carousel-track">
+          <img class="hero__slide is-active" src="assets/sobre-carousel/wireframe-mockups.jpg" alt="" data-cap="Testando fluxos com wireframes em papel" />
+          <img class="hero__slide" src="assets/sobre-carousel/passo-1-empatia.jpg" alt="" data-cap="Facilitando um workshop de Design Thinking" />
+          <img class="hero__slide" src="assets/sobre-carousel/grupo-product-arena-1.jpg" alt="" data-cap="Formação Product Management Mobile no Product Arena" />
+          <img class="hero__slide" src="assets/sobre-carousel/workshop-post-its.jpg" alt="" data-cap="Dinâmica de priorização com post-its" />
+          <img class="hero__slide" src="assets/sobre-carousel/grupo-product-arena-2.jpg" alt="" data-cap="Produto. Prompt. Praia. 2026." />
+          <img class="hero__slide" src="assets/sobre-carousel/tech-talk-bemobi.jpg" alt="" data-cap="Tech talk sobre objetivos de usabilidade" />
+          <img class="hero__slide" src="assets/sobre-carousel/dexconf-2022.jpg" alt="" data-cap="Na DEXCONF 2022" />
+        </div>
+        <div class="hero__dots" role="tablist" data-i18n-aria-label="h.hero.carousel.dots" aria-label="Selecionar imagem">
+          <button class="hero__dot is-active" type="button" role="tab" aria-selected="true" data-i18n-aria-label="h.hero.carousel.dot1" aria-label="Imagem 1"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" data-i18n-aria-label="h.hero.carousel.dot2" aria-label="Imagem 2"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Imagem 3"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Imagem 4"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Imagem 5"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Imagem 6"><span class="hero__dot-fill"></span></button>
+          <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Imagem 7"><span class="hero__dot-fill"></span></button>
+        </div>
+        <p class="hero__carousel-caption">Placeholder — foto a definir</p>
+      </div>
+    </div>
   </div>
 </header>
 
-<!-- ============ ABOUT CONTENT ============ -->
-<section class="cs">
+<!-- ============ FORMAÇÃO & APRENDIZADO CONTÍNUO ============ -->
+<section class="section section--line" id="formacao" aria-labelledby="formacao-heading" data-screen-label="Formação">
   <div class="container">
-    <div class="about-page">
-      <img src="assets/foto-jenny.png" alt="Jennifer Sousa" class="about-photo about-photo--filled reveal" />
-      <div class="about-prose reveal" data-d="1">
-        <div class="about__body">
-          <p data-i18n="ab.about.p1">Sou uma líder de Product Design com experiência que combina <strong>gestão de designers</strong>, <strong>estratégia de UX</strong>, <strong>DesignOps</strong>, discovery, métricas, Design System e evolução de produtos digitais complexos.</p>
-          <p data-i18n="ab.about.p2">Gosto de transformar contextos ambíguos em processos mais claros, experiências mais consistentes e decisões de produto mais embasadas.</p>
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="ab.edu.eyebrow">Trajetória acadêmica</p>
+      <h2 class="section__title" id="formacao-heading" data-i18n="ab.edu.title">Formação, cursos e certificações</h2>
+    </div>
+    <ol class="edu-timeline reveal" data-d="1">
+      <li class="edu-timeline__item">
+        <h3 class="edu-timeline__name" data-i18n="ab.edu.item5.name">Pós-graduação em Product Management</h3>
+        <p class="edu-timeline__meta" data-i18n="ab.edu.item5.meta">Descomplica · 2023</p>
+      </li>
+      <li class="edu-timeline__item">
+        <h3 class="edu-timeline__name" data-i18n="ab.edu.item4.name">Pós-graduação em Liderança e Gestão de Pessoas</h3>
+        <p class="edu-timeline__meta" data-i18n="ab.edu.item4.meta">Descomplica · 2022–2023</p>
+      </li>
+      <li class="edu-timeline__item">
+        <h3 class="edu-timeline__name" data-i18n="ab.edu.item3.name">Especialização em UX Research</h3>
+        <p class="edu-timeline__meta" data-i18n="ab.edu.item3.meta">CCE PUC-Rio · 2019</p>
+      </li>
+      <li class="edu-timeline__item">
+        <h3 class="edu-timeline__name" data-i18n="ab.edu.item2.name">Curso de Web Design (HTML/CSS/JS)</h3>
+        <p class="edu-timeline__meta" data-i18n="ab.edu.item2.meta">SENAC · 2019</p>
+      </li>
+      <li class="edu-timeline__item">
+        <h3 class="edu-timeline__name" data-i18n="ab.edu.item1.name">Graduação em Design Gráfico</h3>
+        <p class="edu-timeline__meta" data-i18n="ab.edu.item1.meta">UVA · 2012–2016</p>
+      </li>
+    </ol>
+
+    <div class="edu-legend reveal" data-d="1">
+      <span class="edu-legend__item"><span class="edu-dot edu-dot--ds"></span><span data-i18n="ab.edu.legend.ds">Design System</span></span>
+      <span class="edu-legend__item"><span class="edu-dot edu-dot--product"></span><span data-i18n="ab.edu.legend.product">Produto</span></span>
+      <span class="edu-legend__item"><span class="edu-dot edu-dot--ux"></span><span data-i18n="ab.edu.legend.ux">UX</span></span>
+      <span class="edu-legend__item"><span class="edu-dot edu-dot--ui"></span><span data-i18n="ab.edu.legend.ui">UI</span></span>
+      <span class="edu-legend__item"><span class="edu-dot edu-dot--soft"></span><span data-i18n="ab.edu.legend.soft">Soft Skill</span></span>
+    </div>
+    <div class="edu-grid reveal" data-d="2">
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--product"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-6.5-2.1 2.1M8.6 15.4l-2.1 2.1m0-11 2.1 2.1m8.8 8.8 2.1 2.1"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course7.name">Mestres do Lovable</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course7.meta">Leo Pereira · 2026</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ux"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course12.name">Acessibilidade</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course12.meta">Môre Educação · 2025</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ux"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16v4H4z"></path><path d="M4 12h16v8H4z"></path><path d="M9 12v8"></path></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course10.name">Design de Serviço</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course10.meta">PM3 · 2024</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--soft"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course9.name">Produtividade e Alta Performance</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course9.meta">Conquer · 2023</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--product"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course11.name">Product Management</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course11.meta">PM3 · 2022</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--soft"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course8.name">Inteligência Emocional</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course8.meta">Conquer · 2021</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ds"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course1.name">Design System &amp; Ops</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course1.meta">Meiuca · 2020</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--product"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course2.name">Métricas de Produto</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course2.meta">Product Arena · 2020</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ux"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course3.name">UX Design</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course3.meta">How Bootcamps · 2020</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ux"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course4.name">UX Metrics</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course4.meta">Product Arena · 2019</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--product"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="11" y1="18" x2="13" y2="18"></line></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course5.name">Product Management Mobile</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course5.meta">Product Arena · 2019</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <span class="edu-card__icon edu-card__icon--ui"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><circle cx="8.5" cy="10.5" r="1.5"></circle><circle cx="15.5" cy="10.5" r="1.5"></circle><circle cx="12" cy="16" r="1.5"></circle></svg></span>
+        <div class="edu-card__body">
+          <h3 class="edu-card__name" data-i18n="ab.edu.course6.name">User Interface Design</h3>
+          <p class="edu-card__meta" data-i18n="ab.edu.course6.meta">UI Lab · 2018</p>
         </div>
       </div>
     </div>
@@ -94,22 +240,21 @@
 </section>
 
 <!-- ============ EXPERIÊNCIA PROFISSIONAL ============ -->
-<section class="cs">
+<section class="section section--line" id="experiencia" aria-labelledby="experiencia-heading">
   <div class="container">
-    <div class="cs__head reveal">
-      <span class="cs__num">·</span>
-      <h2 class="cs__title" data-i18n="ab.xp.title">Experiência profissional</h2>
+    <div class="section__head reveal">
+      <p class="eyebrow" id="experiencia-heading" data-i18n="ab.exp.eyebrow">Experiência Profissional</p>
     </div>
-    <div class="xp">
+    <div class="xp xp--spaced reveal" data-d="1">
       <div class="xp-co reveal" data-d="1">
         <div class="xp-co__head">
-          <h3 class="xp-co__name" data-i18n="ab.xp.bemobi">Bemobi</h3>
+          <h4 class="xp-co__name" data-i18n="ab.xp.bemobi">Bemobi</h4>
           <span class="xp-co__time" data-i18n="ab.xp.bemobi.t">6 anos e 8 meses</span>
         </div>
         <ol class="xp-roles">
           <li class="xp-role">
             <div class="xp-role__top">
-              <h4 class="xp-role__title" data-i18n="ab.r1.title">Lead Product Designer</h4>
+              <h5 class="xp-role__title" data-i18n="ab.r1.title">Lead Product Designer</h5>
               <span class="xp-role__time" data-i18n="ab.r1.time">2 anos e 11 meses</span>
             </div>
             <p class="xp-role__tag" data-i18n="ab.r1.tag">Liderança, DesignOps e produto complexo</p>
@@ -117,7 +262,7 @@
           </li>
           <li class="xp-role">
             <div class="xp-role__top">
-              <h4 class="xp-role__title" data-i18n="ab.r2.title">Specialist Product Design - UX Lead</h4>
+              <h5 class="xp-role__title" data-i18n="ab.r2.title">Specialist Product Design - UX Lead</h5>
               <span class="xp-role__time" data-i18n="ab.r2.time">1 ano e 5 meses</span>
             </div>
             <p class="xp-role__tag" data-i18n="ab.r2.tag">Liderança técnica, desenvolvimento de designers e qualidade</p>
@@ -125,7 +270,7 @@
           </li>
           <li class="xp-role">
             <div class="xp-role__top">
-              <h4 class="xp-role__title" data-i18n="ab.r3.title">Senior Product Designer</h4>
+              <h5 class="xp-role__title" data-i18n="ab.r3.title">Senior Product Designer</h5>
               <span class="xp-role__time" data-i18n="ab.r3.time">1 ano e 1 mês</span>
             </div>
             <p class="xp-role__tag" data-i18n="ab.r3.tag">Escalabilidade, Design System e validação</p>
@@ -133,7 +278,7 @@
           </li>
           <li class="xp-role">
             <div class="xp-role__top">
-              <h4 class="xp-role__title" data-i18n="ab.r4.title">Product Designer Pleno</h4>
+              <h5 class="xp-role__title" data-i18n="ab.r4.title">Product Designer Pleno</h5>
               <span class="xp-role__time" data-i18n="ab.r4.time">1 ano e 6 meses</span>
             </div>
             <p class="xp-role__tag" data-i18n="ab.r4.tag">Produto, operação e entrega ponta a ponta</p>
@@ -143,13 +288,13 @@
       </div>
       <div class="xp-co reveal" data-d="1">
         <div class="xp-co__head">
-          <h3 class="xp-co__name" data-i18n="ab.xp.achei">Achei Farmácias</h3>
+          <h4 class="xp-co__name" data-i18n="ab.xp.achei">Achei Farmácias</h4>
           <span class="xp-co__time" data-i18n="ab.xp.achei.t">1 ano e 4 meses</span>
         </div>
         <ol class="xp-roles">
           <li class="xp-role">
             <div class="xp-role__top">
-              <h4 class="xp-role__title" data-i18n="ab.r5.title">Product Designer</h4>
+              <h5 class="xp-role__title" data-i18n="ab.r5.title">Product Designer</h5>
               <span class="xp-role__time" data-i18n="ab.r5.time">1 ano e 4 meses</span>
             </div>
             <p class="xp-role__tag" data-i18n="ab.r5.tag">MVP, healthtech e produto B2B/B2C</p>
@@ -157,40 +302,6 @@
           </li>
         </ol>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA ============ -->
-<section class="case-cta">
-  <div class="container">
-    <h2 class="case-cta__title reveal" data-i18n="s.cta.title">Vamos <em>conversar?</em></h2>
-
-    <div class="contact__links case-cta__contacts reveal" data-d="1">
-      <button type="button" class="clink clink--copy" data-copy="jenniferellen.18@gmail.com" aria-label="Copiar e-mail jenniferellen.18@gmail.com" data-i18n-label="s.copy.label">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
-        <span class="clink__body"><span class="label">Email</span> · jenniferellen.18@gmail.com</span>
-        <span class="clink__status" role="status" aria-live="polite"></span>
-      </button>
-      <a class="clink" href="https://www.linkedin.com/in/jennysousa/" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-10h4v1.5"></path><rect x="2" y="9" width="4" height="11"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-        <span><span class="label">LinkedIn</span> · /in/jennysousa</span>
-        <svg class="ext-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path></svg>
-        <span class="sr-only" data-i18n="s.newtab">(abre em nova aba)</span>
-      </a>
-      <a class="clink" href="https://wa.me/5521969173592" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
-        <span><span class="label">WhatsApp</span> · (21) 96917-3592</span>
-        <svg class="ext-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path></svg>
-        <span class="sr-only" data-i18n="s.newtab">(abre em nova aba)</span>
-      </a>
-    </div>
-
-    <div class="case-cta__row reveal" data-d="2">
-      <a class="btn-ghost btn-ghost--link" href="index.html">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        <span data-i18n="s.backlink">Voltar para a página inicial</span>
-      </a>
     </div>
   </div>
 </section>
@@ -203,9 +314,9 @@
     <span data-i18n="s.footer.copy">© 2026 Jennifer Sousa · Desenhado e desenvolvido com IA como copiloto</span>
     <span class="footer__a11y" data-i18n="s.footer.a11y">Acessibilidade verificada · WCAG 2.1 AA</span>
   </div>
-  <a class="footer__top" href="#top"><span data-i18n="s.footer.top">Voltar ao topo</span>
+  <button class="footer__top" id="toTop"><span data-i18n="s.footer.top">Voltar ao topo</span>
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-  </a>
+  </button>
 </footer>
 
 <script src="i18n.js"></script>
